@@ -23,20 +23,14 @@
 
 .logo {
     position: absolute;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
     color: white;
-    top: 15px;
+    top: 10px;
     left: 20px;
     transition: color 0.4s ease;
     transform: rotate(90deg);
     letter-spacing: -3.5px;
-}
-
-head > title {
-    transform: rotate(90deg);
-    letter-spacing: -3.5px;
-    color: #e74c3c;
 }
 
 .headerBar.sticky > .logo {
@@ -49,21 +43,21 @@ head > title {
     transition: color 0.4s ease;
 }
 
-.menu {
+.headerBar > .menu {
     position: absolute;
     list-style: none;
-    font-size: 20px;
+    font-size: 16px;
     right: 30px;
     top: 15px;
 }
 
-.menu > li {
+.headerBar > .menu > li {
     display: inline-block;
     padding-right: 40px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.menu > li > a {
+.headerBar > .menu > li > a {
     color: white;
     transition: color 0.3s ease;
 }
@@ -73,7 +67,7 @@ head > title {
     transition: all 0.3s ease;
 }
 
-.menu > li > a:hover {
+.headerBar > .menu > li > a:hover {
     color: #FFA500;
     transition: color 0.3s ease;
 }
@@ -81,6 +75,52 @@ head > title {
 .headerBar.sticky .menu > li > a:hover {
     color: #F2F0FC;
     transition: all 0.3s ease;
+}
+
+.headerBar > .menu-icon {
+    position: absolute;
+    display: none;
+    list-style: none;
+    font-size: 16px;
+    right: 30px;
+    top: 15px;
+}
+
+.headerBar > .menu-icon > li {
+    display: inline-block;
+    padding-right: 60px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.headerBar > .menu-icon > li > a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.headerBar.sticky .menu-icon > li > a {
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.headerBar > .menu-icon > li > a:hover {
+    color: #FFA500;
+    transition: color 0.3s ease;
+}
+
+.headerBar.sticky .menu-icon > li > a:hover {
+    color: #F2F0FC;
+    transition: all 0.3s ease;
+}
+
+.headerBar > .menu-btn {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.headerBar.sticky .menu-btn {
+    color: black;
 }
 
 /*------------------------------------------------------------*/
@@ -2085,7 +2125,7 @@ footer > h3 {
 }
 
 
-/*Media Queries*/
+Media Queries
 @media all and (max-width: 1475px) {
     .about > .content {
         left: 55%;
@@ -2155,12 +2195,35 @@ footer > h3 {
 }
 
 @media all and (max-width: 1255px) {
-    .service {
-        background: #1dbf73;
+    .service > .content {
+        grid-column-gap: 10px;
+        grid-row-gap: 70px;
+        left: 565px;
+    }
+    .service > .content > .app-development::after {
+        left: 130px;
+    }
+    .service > .content > .web-design::after {
+        left: 450px;
+    }
+    .service > .content > .graphic-design::after {
+        left: 130px;
+    }
+    .service > .content > .innovative-ideas::after {
+        left: 450px;
+    }
+}
+
+@media all and (max-width: 1220px) {
+    .home > .text {
+        left: 650px;
     }
 }
 
 @media all and (max-width: 1182px) {
+    .home > .text {
+        left: 600px;
+    }
     .quotes > .designer {
         left: 20%;
     }
@@ -2216,5 +2279,89 @@ footer > h3 {
     }
 }
 
+@media all and (max-width: 1024px) {
+    .service > .content {
+        grid-column-gap: 5px;
+        grid-row-gap: 70px;
+        left: 525px;
+    }
+    .service > .content > article {
+        width: 280px;
+    }
+    .service > .content > .app-development::after {
+        left: 120px;
+    }
+    .service > .content > .web-design::after {
+        left: 400px;
+    }
+    .service > .content > .graphic-design::after {
+        left: 120px;
+    }
+    .service > .content > .innovative-ideas::after {
+        left: 400px;
+    }
+}
 
+@media all and (max-width: 988px) {
+    .headerBar > .logo {
+        top: 15%;
+        font-size: 36px;
+    }
+    .headerBar > .menu {
+        display: none;
+    }
+    .headerBar > .menu-icon {
+        display: flex;
+        font-size: 20px;
+    }
+}
 
+@media all and (max-width: 939px) {
+    .quotes > .thinking-image {
+        right: 500px;
+        background: #e74c3c;
+    }
+    .quotes > .designer {
+        transform: translateX(60%);
+        animation: paused;
+    }
+    .quotes > .coder {
+        right: 100px;
+        top: 350px;
+        animation: paused;
+    }
+    @keyframes quotes-designer {
+        0% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            right: 300px;
+            transform: translate(-50%, -25px);
+        }
+        50% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            right: 300px;
+            transform: translate(-50%, -25px);
+        }
+    }
+    @keyframes quotes-coder {
+        49.9% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            right: 300px;
+            top: 350px;
+            transform: translate(-50%, -25px);
+        }
+        100% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            right: 300px;
+            top: 350px;
+            transform: translate(-50%, -25px);
+        }
+    }
+}
