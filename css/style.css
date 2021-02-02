@@ -13,12 +13,7 @@
     width: 100vw;
     height: 50px;
     transition: all 0.3s ease;
-}
-
-.headerBar.sticky {
-    padding: 5px 5px;
-    background: #b8b8b5;
-    transition: all 0.3s ease;
+    background: #6f6f6f;
 }
 
 .logo {
@@ -31,16 +26,6 @@
     transition: color 0.4s ease;
     transform: rotate(90deg);
     letter-spacing: -3.5px;
-}
-
-.headerBar.sticky > .logo {
-    color: black;
-    transition: color 0.4s ease;
-}
-
-.headerBar.sticky > .logo > span {
-    color: #d28901;
-    transition: color 0.4s ease;
 }
 
 .headerBar > .menu {
@@ -62,19 +47,9 @@
     transition: color 0.3s ease;
 }
 
-.headerBar.sticky .menu > li > a {
-    color: black;
-    transition: all 0.3s ease;
-}
-
 .headerBar > .menu > li > a:hover {
     color: #FFA500;
     transition: color 0.3s ease;
-}
-
-.headerBar.sticky .menu > li > a:hover {
-    color: #F2F0FC;
-    transition: all 0.3s ease;
 }
 
 .headerBar > .menu-icon {
@@ -97,19 +72,9 @@
     transition: color 0.3s ease;
 }
 
-.headerBar.sticky .menu-icon > li > a {
-    color: black;
-    transition: all 0.3s ease;
-}
-
 .headerBar > .menu-icon > li > a:hover {
     color: #FFA500;
     transition: color 0.3s ease;
-}
-
-.headerBar.sticky .menu-icon > li > a:hover {
-    color: #F2F0FC;
-    transition: all 0.3s ease;
 }
 
 .headerBar > .menu-btn {
@@ -117,10 +82,6 @@
     display: none;
     cursor: pointer;
     color: white;
-}
-
-.headerBar.sticky .menu-btn {
-    color: black;
 }
 
 /*------------------------------------------------------------*/
@@ -220,7 +181,7 @@
     font-family: 'Ubuntu', sans-serif;
     left: 50%;
     top: 130px;
-    width: 430px;
+    width: 450px;
     height: 470px;
 }
 
@@ -405,12 +366,9 @@
     background-color: #E5E5E5;
 }
 
-.quotes > .designer, .coder, .thinking-image {
+.quotes > .designer {
     position: absolute;
     transition: all 0.6s ease;
-}
-
-.quotes > .designer {
     width: 300px;
     height: 210px;
     font-family: 'Ubuntu', sans-serif;
@@ -443,6 +401,8 @@
 }
 
 .quotes > .coder {
+    position: absolute;
+    transition: all 0.6s ease;
     width: 300px;
     height: 210px;
     font-family: 'Ubuntu', sans-serif;
@@ -482,6 +442,8 @@
 }
 
 .quotes > .thinking-image {
+    position: absolute;
+    transition: all 0.6s ease;
     width: 280px;
     top: 80px;
     left: 0;
@@ -2309,7 +2271,6 @@ footer > h3 {
 @media all and (max-width: 988px) {
     .headerBar > .logo {
         top: 15%;
-        font-size: 36px;
     }
     .headerBar > .menu {
         display: none;
@@ -2447,6 +2408,173 @@ footer > h3 {
     }
 }
 
+@media all and (max-width: 425px) {
+    .headerBar > .menu-icon {
+        display: none;
+    }
+    .headerBar > .menu-btn {
+        display: flex;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+    }
+    .home {
+        background: url("../asserts/background-mobile.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .home > .text {
+        text-align: center;
+        /*left: 200px;*/
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about {
+        height: 1080px;
+    }
+    .about > .title {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .about > .profilephoto{
+        left: 58%;
+        transform: translateX(-50%);
+    }
+    .about > .content {
+        width: 100vw;
+        height: 380px;
+    }
+    .about > .content > .header1 {
+        font-size: 26px;
+        left: 10%;
+    }
+    .about > .content > .header2 {
+        font-size: 18px;
+        left: 10%;
+    }
+    .about > .content > p {
+        font-size: 17px;
+        left: 10%;
+    }
+    .about > .content > :nth-child(4) {
+        top: 210px;
+    }
+    .about > .content > button {
+        font-size: 12px;
+        width: 140px;
+        height: 20px;
+        top: 300px;
+    }
+    .about > .content > .btnHireMe {
+        left: 10%;
+    }
+    .about > .content > .btnCV {
+        right: 10%;
+    }
+    .about > .content > .socialmedia {
+        bottom: 0;
+        left: 40%;
+        transform: translateX(-50%);
+    }
+    .about > .content > .socialmedia > .list {
+        font-size: 25px;
+    }
+
+    .quotes > .thinking-image {
+        width: 200px;
+    }
+    .quotes > .designer{
+        width: 170px;
+        height: 210px;
+        font-size: 15px;
+    }
+    .quotes > .coder {
+        width: 170px;
+        height: 210px;
+        font-size: 15px;
+    }
+    .quotes > .designer > .author {
+        font-size: 13px;
+    }
+    .quotes > .coder > .author {
+        font-size: 13px;
+    }
+    .quotes > .designer > .content {
+        top: 45px;
+        left: 0;
+    }
+    .quotes > .coder > .content {
+        top: 45px;
+    }
+
+    .service > .title {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .service > .content {
+        position: absolute;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        left: 50%;
+        top: 58%;
+        transform: translate(-50%, -50%);
+    }
+    .service > .content > .app-development::after{
+        left: 70px;
+    }
+    .service > .content > .web-development::after{
+        left: 70px;
+    }
+    .service > .content > .innovative-ideas::after{
+        left: 70px;
+    }
+    .service > .content > article {
+        width: 180px;
+    }
+    .service > .content > .app-development > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > .web-design > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > .web-development > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > .graphic-design > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > .innovative-ideas > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > .e-commerce > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > article > .sub-title {
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .service > .content > article > .sub-content {
+        font-size: 15px;
+        color: white;
+        width: 180px;
+        height: 90px;
+    }
+    .service > .content > article > .read-more > a {
+        font-size: 12px;
+    }
+}
+
 
 /*----------------------------------------------*/
 @media all and (max-height: 900px) and (min-height: 800px) {
@@ -2470,13 +2598,10 @@ footer > h3 {
     }
 }
 
-/*@media all and (max-height: 815vh) and (max-width: 988px) {*/
-/*    .service {*/
-/*        height: 130vh;*/
-/*    }*/
-/*}*/
-
-@media all and (max-height: 760px) {
+@media all and (max-height: 760px) and (max-width: 426px){
+    .about {
+        height: 100vh;
+    }
     .service {
         height: 120vh;
     }
@@ -2534,8 +2659,11 @@ footer > h3 {
     }
 }
 
-@media all and (max-height: 565px) {
+@media all and (max-width: 425px) {
     .about {
-        height: 200vh;
+        height: 1000px;
+    }
+    .service {
+        height: 1080px;
     }
 }
