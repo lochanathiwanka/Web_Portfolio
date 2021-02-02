@@ -1,0 +1,2220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.headerBar {
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.headerBar.sticky {
+    padding: 5px 5px;
+    background: #b8b8b5;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    top: 15px;
+    left: 20px;
+    transition: color 0.4s ease;
+    transform: rotate(90deg);
+    letter-spacing: -3.5px;
+}
+
+head > title {
+    transform: rotate(90deg);
+    letter-spacing: -3.5px;
+    color: #e74c3c;
+}
+
+.headerBar.sticky > .logo {
+    color: black;
+    transition: color 0.4s ease;
+}
+
+.headerBar.sticky > .logo > span {
+    color: #d28901;
+    transition: color 0.4s ease;
+}
+
+.menu {
+    position: absolute;
+    list-style: none;
+    font-size: 20px;
+    right: 30px;
+    top: 15px;
+}
+
+.menu > li {
+    display: inline-block;
+    padding-right: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu > li > a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.headerBar.sticky .menu > li > a {
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.menu > li > a:hover {
+    color: #FFA500;
+    transition: color 0.3s ease;
+}
+
+.headerBar.sticky .menu > li > a:hover {
+    color: #F2F0FC;
+    transition: all 0.3s ease;
+}
+
+/*------------------------------------------------------------*/
+
+/*Home styling*/
+.home {
+    z-index: 0;
+    position: relative;
+    background: url("../asserts/background.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home > .blend {
+    position: absolute;
+    background: #304659;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+.home > .text {
+    position: absolute;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    left: 900px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home > .text > .typing {
+    position: relative;
+    color: #FFA500;
+}
+
+/*----------------------------------------------------*/
+
+/*About styling*/
+.about {
+    position: relative;
+    padding-bottom: 20px;
+    height: 600px;
+    background-color: #E5E5E5;
+}
+
+.about > .title {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 20px;
+    left: 100px;
+    top: 60px;
+    padding-bottom: 10px;
+    transition: all 10s ease;
+}
+
+.about > .title::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #FFA500;
+    border-radius: 30px;
+}
+
+.about > .profilephoto {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 150px;
+    left: 300px;
+}
+
+.about > .profilephoto > .image {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 6px 2px #899096;
+}
+
+.about > .profilephoto > .frame {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    top: 30px;
+    left: 30px;
+    background: #899096;
+    box-shadow: 1px 1px 1px 0 #C4C4C4;
+}
+
+.about > .content {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    left: 50%;
+    top: 130px;
+    width: 430px;
+    height: 470px;
+}
+
+.about > .content > .header1 {
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+}
+
+.about > .content > .header2 {
+    position: absolute;
+    font-size: 20px;
+    top: 30px;
+    color: #FFA500;
+}
+
+.about > .content > p {
+    position: absolute;
+    font-size: 20px;
+}
+
+.about > .content > :nth-child(3) {
+    top: 100px;
+}
+
+.about > .content > :nth-child(4) {
+    top: 250px;
+}
+
+.about > .content > button {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 180px;
+    height: 30px;
+    bottom: 0;
+    border: 0;
+    top: 370px;
+}
+
+.about > .content > .btnHireMe {
+    background: #1C2520;
+    color: #FFA500;
+    box-shadow: 1px 3px 6px 2px #899096;
+    left: 0;
+
+    transition: all 0.6s ease;
+}
+
+.about > .content > .btnHireMe:hover {
+    transition: all 0.6s ease;
+    background: #444965;
+    color: #E4E5E8;
+    font-weight: 700;
+    box-shadow: 1px 3px 6px 2px #848484;
+    transform: translate(0, -10px);
+}
+
+.about > .content > .btnHireMe:focus {
+    outline: none !important;
+}
+
+.about > .content > .btnCV {
+    background: #FFA500;
+    color: white;
+    border: 0;
+    box-shadow: 1px 3px 6px 2px #899096;
+    left: 200px;
+    transition: all 0.6s ease;
+}
+
+.about > .content > .btnCV:hover {
+    transition: all 0.6s ease;
+    background: #477158;
+    color: black;
+    font-weight: 700;
+    box-shadow: 1px 3px 6px 2px #6f6f6f;
+    transform: translate(0, -10px);
+}
+
+.about > .content > .btnCV:focus {
+    outline: none !important;
+}
+
+.about > .content > .socialmedia {
+    position: absolute;
+    bottom: 0;
+}
+
+.about > .content > .socialmedia > .list {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about > .content > .socialmedia > .list > li {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.about > .content > .socialmedia > .list > li > a > .fab, .icon-freelancer, .icon-fiverr {
+    transition: .6s;
+}
+
+.about > .content > .socialmedia > .list > li > a > .fab:hover {
+    transition: all .6s ease;
+    transform: translate(0, -10px);
+    color: #808080;
+}
+
+.about > .content > .socialmedia > .list > .facebook > a {
+    color: #3b5998;
+}
+
+.about > .content > .socialmedia > .list > .twitter > a {
+    color: #00acee;
+}
+
+.about > .content > .socialmedia > .list > .linkedin > a {
+    color: #0e76a8;
+}
+
+.about > .content > .socialmedia > .list > .github > a {
+    color: #171515;
+}
+
+.svg-freelancer {
+    background-image: url("../asserts/icons/freelancer-blue.svg");
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 30px;
+    transition: all 0.6s ease;
+    left: 250px;
+}
+
+.svg-freelancer:hover {
+    background-image: url("../asserts/icons/freelancer-gray.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 30px;
+    transition: all 0.6s ease;
+    transform: translate(0, -10px);
+}
+
+.svg-fiverr {
+    background-image: url("../asserts/icons/fiverr-green.svg");
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 30px;
+    transition: all 0.6s ease;
+    left: 305px;
+}
+
+.svg-fiverr:hover {
+    background-image: url("../asserts/icons/fiverr-gray.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 30px;
+    transition: all 0.6s ease;
+    transform: translate(0, -10px);
+}
+
+/*-------------------------------------------------------------------*/
+
+/*Quotes styling*/
+.quotes {
+    position: relative;
+    height: 500px;
+    padding-top: 100px;
+    background-color: #E5E5E5;
+}
+
+.quotes > .designer, .coder, .thinking-image {
+    position: absolute;
+    transition: all 0.6s ease;
+}
+
+.quotes > .designer {
+    width: 300px;
+    height: 210px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    /*left: 330px;*/
+    left: 30%;
+    transform: translateX(-50%);
+    top: 80px;
+    animation: quotes-designer 2s infinite alternate;
+}
+
+.quotes > .designer > .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.quotes > .designer > .content {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+
+.quotes > .designer > .author {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.quotes > .coder {
+    width: 300px;
+    height: 210px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    left: 70%;
+    transform: translateX(-50%);
+    top: 80px;
+    animation: quotes-coder 2s infinite alternate;
+}
+
+.quotes > .coder > .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.quotes > .coder > .title::before {
+    content: "<";
+}
+
+.quotes > .coder > .title::after {
+    content: "/>";
+}
+
+.quotes > .coder > .content {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+
+.quotes > .coder > .author {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.quotes > .thinking-image {
+    width: 280px;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin: auto;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+/*-------------------------------------------*/
+
+/*Service styling*/
+.service {
+    position: relative;
+    height: 100vh;
+    background: rgba(34, 32, 32, 0.84);
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 20px;
+}
+
+.service > .title {
+    position: absolute;
+    color: white;
+    left: 100px;
+    top: 80px;
+}
+
+.service > .title::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #FFA500;
+    border-radius: 30px;
+}
+
+.service > .content {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+}
+
+.service > .content > .app-development::after, .web-design::after, .graphic-design::after, .innovative-ideas::after {
+    position: absolute;
+    content: " ";
+    width: 260px;
+    height: 1px;
+    background: white;
+    border-radius: 30px;
+    transform: rotate(270deg);
+}
+
+.service > .content > .app-development::after, .web-design::after {
+    top: 120px;
+}
+
+.service > .content > .app-development::after {
+    left: 205px;
+}
+
+.service > .content > .web-design::after {
+    left: 575px;
+}
+
+.service > .content > .graphic-design::after, .innovative-ideas::after {
+    top: 440px;
+}
+
+.service > .content > .graphic-design::after {
+    left: 205px;
+}
+
+.service > .content > .innovative-ideas::after {
+    left: 575px;
+}
+
+.service > .content > .app-development > .icon {
+    width: 50px;
+    height: 50px;
+    background: #FFA500 url("../asserts/icons/app-development.png") no-repeat center;
+    background-size: contain;
+}
+
+.service > .content > .web-design > .icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: #FFA500;
+    background-size: contain;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.service > .content > .web-design > .icon > h3::before {
+    content: "<";
+}
+
+.service > .content > .web-design > .icon > h3::after {
+    content: ">";
+}
+
+.service > .content > .web-development > .icon {
+    width: 50px;
+    height: 50px;
+    background: #FFA500 url("../asserts/icons/web-development.png") no-repeat center;
+    background-size: contain;
+}
+
+.service > .content > .graphic-design > .icon {
+    width: 50px;
+    height: 50px;
+    background: #FFA500 url("../asserts/icons/graphic-design.png") no-repeat center;
+    background-size: contain;
+}
+
+.service > .content > .innovative-ideas > .icon {
+    width: 50px;
+    height: 50px;
+    background: #FFA500 url("../asserts/icons/innovative-ideas.png") no-repeat center;
+    background-size: contain;
+}
+
+.service > .content > .e-commerce > .icon {
+    width: 50px;
+    height: 50px;
+    background: #FFA500 url("../asserts/icons/e-commerce.png") no-repeat center;
+    background-size: contain;
+}
+
+.service > .content > article > .sub-title {
+    font-size: 24px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.service > .content > article > .sub-content {
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    height: 90px;
+}
+
+.service > .content > article > .read-more > a {
+    font-weight: 100;
+    font-size: 15px;
+    color: #FFA500;
+    transition: all 0.6s ease;
+}
+
+.service > .content > article > .read-more > a:hover {
+    background: #1C2520;
+    color: #E4E5E8;
+    transition: all 0.6s ease;
+}
+
+/*----------------------------------------------------------------*/
+
+/*Skills styling*/
+.skills {
+    height: 100vh;
+    position: relative;
+}
+
+.skills > .title {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    left: 100px;
+    top: 80px;
+}
+
+.skills > .title::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #FFA500;
+    border-radius: 30px;
+}
+
+.skills > .content {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills > .content > section {
+    position: relative;
+    width: 200px;
+    height: 260px;
+}
+
+.skills > .content > section > .sub-content {
+    position: absolute;
+    width: 200px;
+    height: 220px;
+    top: 45px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 11px 7px 8px 1px #bfb7b7;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.skills > .content > section > .sub-content:hover {
+    width: 230px;
+    height: 250px;
+    transform: translateY(-25px);
+    transition: all 0.6s ease;
+}
+
+.skills > .content > section > .sub-content > .footer {
+    transition: all 0.2s ease;
+}
+
+.skills > .content > section > .sub-content:hover > .footer {
+    position: absolute;
+    width: 100%;
+    transition: all 0.6s ease;
+}
+
+.skills > .content > section > .sub-content::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    transform: skewY(345deg);
+    transition: all 0.5s ease;
+}
+
+.skills > .content > section > .sub-content:hover::before {
+    transform: skewY(375deg);
+}
+
+.skills > .content > .java > .sub-content::before {
+    background-color: #2692D0;
+}
+
+.skills > .content > .html > .sub-content::before {
+    background-color: #DB1F48;
+}
+
+.skills > .content > .css > .sub-content::before {
+    /*background-color: #FFB001;*/
+    background-color: #1FBBA0;
+}
+
+.skills > .content > .javascript > .sub-content::before {
+    background-color: #A16AE8;
+}
+
+.skills > .content > .angular > .sub-content::before {
+    /*background-color: #1FBBA0;*/
+    background-color: #FFB001;
+}
+
+.skills > .content > .react > .sub-content::before {
+    background-color: #2B4560;
+}
+
+.skills > .content > section > .sub-content > .sub-title {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills > .content > section > .sub-content > .circle {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #b2b8ba;
+    border-radius: 100%;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*box-shadow: 4px 8px 15px 2px #bfb7b7;*/
+}
+
+.skills > .content > .java {
+    position: relative;
+}
+
+.skills > .content > .java > .icon {
+    z-index: 2;
+    position: absolute;
+    width: 80px;
+    height: 46.19px;
+    background-color: #2692D0;
+    margin: 23.09px 0;
+    top: 0;
+}
+
+.skills > .content > .java > .icon::before,
+.skills > .content > .java > .icon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.skills > .content > .java > .icon::before {
+    bottom: 100%;
+    border-bottom: 23.09px solid #2692D0;
+}
+
+.skills > .content > .java > .icon::after {
+    top: 100%;
+    width: 0;
+    border-top: 23.09px solid #2692D0;
+}
+
+.skills > .content > .java > .icon > i {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills > .content > .java > .sub-content > .circle {
+    /*border: 5px solid #2692D0;*/
+    border: 5px solid #666565;
+    border-left: 5px solid #2692D0;
+    border-right: 5px solid #2692D0;
+    border-bottom: 5px solid #2692D0;
+}
+
+.skills > .content > .java > .sub-content > .footer {
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #2692D0;
+    bottom: 0;
+}
+
+.skills > .content > .html {
+    position: relative;
+}
+
+.skills > .content > .html > .icon {
+    z-index: 2;
+    position: absolute;
+    width: 80px;
+    height: 46.19px;
+    background-color: #DB1F48;
+    margin: 23.09px 0;
+    top: 0;
+}
+
+.skills > .content > .html > .icon::before,
+.skills > .content > .html > .icon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.skills > .content > .html > .icon::before {
+    bottom: 100%;
+    border-bottom: 23.09px solid #DB1F48;
+}
+
+.skills > .content > .html > .icon::after {
+    top: 100%;
+    width: 0;
+    border-top: 23.09px solid #DB1F48;
+}
+
+.skills > .content > .html > .icon > i {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills > .content > .html > .sub-content > .circle {
+    /*border: 5px solid #2692D0;*/
+    border: 5px solid #666565;
+    border-left: 5px solid #DB1F48;
+    border-right: 5px solid #DB1F48;
+    border-bottom: 5px solid #DB1F48;
+}
+
+.skills > .content > .html > .sub-content > .footer {
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #DB1F48;
+    bottom: 0;
+}
+
+.skills > .content > .css {
+    position: relative;
+}
+
+.skills > .content > .css > .icon {
+    z-index: 2;
+    position: absolute;
+    width: 80px;
+    height: 46.19px;
+    background-color: #1FBBA0;
+    margin: 23.09px 0;
+    top: 0;
+}
+
+.skills > .content > .css > .icon::before,
+.skills > .content > .css > .icon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.skills > .content > .css > .icon::before {
+    bottom: 100%;
+    border-bottom: 23.09px solid #1FBBA0;
+}
+
+.skills > .content > .css > .icon::after {
+    top: 100%;
+    width: 0;
+    border-top: 23.09px solid #1FBBA0;
+}
+
+.skills > .content > .css > .icon > i {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills > .content > .css > .sub-content > .circle {
+    /*border: 5px solid #2692D0;*/
+    border: 5px solid #666565;
+    border-left: 5px solid #1FBBA0;
+    border-right: 5px solid #1FBBA0;
+    border-bottom: 5px solid #1FBBA0;
+}
+
+.skills > .content > .css > .sub-content > .footer {
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #1FBBA0;
+    bottom: 0;
+}
+
+.skills > .content > .javascript {
+    position: relative;
+}
+
+.skills > .content > .javascript > .icon {
+    z-index: 2;
+    position: absolute;
+    width: 80px;
+    height: 46.19px;
+    background-color: #A16AE8;
+    margin: 23.09px 0;
+    top: 0;
+}
+
+.skills > .content > .javascript > .icon::before,
+.skills > .content > .javascript > .icon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.skills > .content > .javascript > .icon::before {
+    bottom: 100%;
+    border-bottom: 23.09px solid #A16AE8;
+}
+
+.skills > .content > .javascript > .icon::after {
+    top: 100%;
+    width: 0;
+    border-top: 23.09px solid #A16AE8;
+}
+
+.skills > .content > .javascript > .icon > i {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills > .content > .javascript > .sub-content > .circle {
+    /*border: 5px solid #2692D0;*/
+    border: 5px solid #666565;
+    border-left: 5px solid #A16AE8;
+    border-right: 5px solid #A16AE8;
+    border-bottom: 5px solid #A16AE8;
+}
+
+.skills > .content > .javascript > .sub-content > .footer {
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #A16AE8;
+    bottom: 0;
+}
+
+.skills > .content > .angular {
+    position: relative;
+}
+
+.skills > .content > .angular > .icon {
+    z-index: 2;
+    position: absolute;
+    width: 80px;
+    height: 46.19px;
+    background-color: #FFB001;
+    margin: 23.09px 0;
+    top: 0;
+}
+
+.skills > .content > .angular > .icon::before,
+.skills > .content > .angular > .icon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.skills > .content > .angular > .icon::before {
+    bottom: 100%;
+    border-bottom: 23.09px solid #FFB001;
+}
+
+.skills > .content > .angular > .icon::after {
+    top: 100%;
+    width: 0;
+    border-top: 23.09px solid #FFB001;
+}
+
+.skills > .content > .angular > .icon > i {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills > .content > .angular > .sub-content > .circle {
+    /*border: 5px solid #2692D0;*/
+    border: 5px solid #666565;
+    border-left: 5px solid #FFB001;
+    border-right: 5px solid #FFB001;
+    border-bottom: 5px solid #FFB001;
+}
+
+.skills > .content > .angular > .sub-content > .footer {
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #FFB001;
+    bottom: 0;
+}
+
+.skills > .content > .react {
+    position: relative;
+}
+
+.skills > .content > .react > .icon {
+    z-index: 2;
+    position: absolute;
+    width: 80px;
+    height: 46.19px;
+    background-color: #2B4560;
+    margin: 23.09px 0;
+    top: 0;
+}
+
+.skills > .content > .react > .icon::before,
+.skills > .content > .react > .icon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.skills > .content > .react > .icon::before {
+    bottom: 100%;
+    border-bottom: 23.09px solid #2B4560;
+}
+
+.skills > .content > .react > .icon::after {
+    top: 100%;
+    width: 0;
+    border-top: 23.09px solid #2B4560;
+}
+
+.skills > .content > .react > .icon > i {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills > .content > .react > .sub-content > .circle {
+    /*border: 5px solid #2692D0;*/
+    border: 5px solid #666565;
+    border-left: 5px solid #2B4560;
+    border-right: 5px solid #2B4560;
+    border-bottom: 5px solid #2B4560;
+}
+
+.skills > .content > .react > .sub-content > .footer {
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #2B4560;
+    bottom: 0;
+}
+
+.skills > .btn-more {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background: #FFA500;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 1px 3px 6px 2px #899096;
+    right: 250px;
+    bottom: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+.skills > .btn-more:hover {
+    transition: all 0.6s ease;
+    background: #1C2520;
+    color: #E4E5E8;
+    font-weight: 700;
+    box-shadow: 1px 3px 6px 2px #242b2b;
+    transform: translate(0, -10px);
+}
+
+.skills > .btn-more:focus {
+    outline: none !important;
+}
+
+/*------------------------------------------------------------*/
+
+/*Portfolio styling*/
+.portfolio {
+    position: relative;
+    height: 100vh;
+    background: #E5E5E5;
+}
+
+.portfolio > .title {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    left: 100px;
+    top: 80px;
+}
+
+.portfolio > .title::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #FFA500;
+    border-radius: 30px;
+}
+
+/*.portfolio > .guitar-photo {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background: url("../asserts/portfolio/guitar.png") no-repeat center;
+    background-size: contain;
+    top: 150px;
+}*/
+
+.portfolio > .frame {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    width: 800px;
+    height: 600px;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio > .frame > div {
+    cursor: pointer;
+    box-shadow: 8px 6px 12px 2px #9a9191;
+    transition: all 0.4s ease;
+}
+
+.portfolio > .frame > .photo-1 {
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background: url("../asserts/portfolio/photo-1.JPG") no-repeat center;
+    background-size: cover;
+    transition: all 0.4s ease-out;
+}
+
+.portfolio > .frame > .photo-2 {
+    position: relative;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background: url("../asserts/portfolio/photo-2.JPG") no-repeat center;
+    background-size: cover;
+    transition: all 0.4s ease-out;
+}
+
+.portfolio > .frame > .photo-3 {
+    position: relative;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background: url("../asserts/portfolio/photo-3.jpg") no-repeat center;
+    background-size: cover;
+    transition: all 0.4s ease-out;
+}
+
+.portfolio > .frame > .photo-4 {
+    position: relative;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background: #1dbf73;
+    background-size: cover;
+    transition: all 0.4s ease-out;
+}
+
+.portfolio > .frame > .photo-5 {
+    position: relative;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background: #FFA500;
+    background-size: cover;
+    transition: all 0.4s ease-out;
+}
+
+.portfolio > .frame > .photo-6 {
+    position: relative;
+    grid-column: 1/5;
+    grid-row: 3/5;
+    background: #e74c3c;
+    background-size: cover;
+    transition: all 0.4s ease-out;
+}
+
+.portfolio > .frame > div:hover {
+    transform: translateY(15px);
+    transition: all 0.4s ease-out;
+}
+
+.portfolio > .frame > div::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    /*background: linear-gradient(to top, #000, transparent);*/
+    background: #1c2520;
+    z-index: 2;
+    transition: all 0.4s ease-out;
+    opacity: 0;
+}
+
+.portfolio > .frame > div:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    bottom: 0;
+    transition: all 0.4s ease-out;
+}
+
+.portfolio > .frame > .photo-1 > .text, .photo-6 > .text {
+    position: absolute;
+    width: max-content;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: white;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    transition: all 0.4s ease-out;
+    opacity: 0;
+}
+
+.portfolio > .frame > .photo-2 > .text, .photo-3 > .text, .photo-4 > .text, .photo-5 > .text {
+    position: absolute;
+    width: max-content;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: white;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    transition: all 0.4s ease-out;
+    opacity: 0;
+}
+
+.portfolio > .frame > div:hover > .text {
+    opacity: 1;
+    z-index: 3;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease-out;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Education styling*/
+.education {
+    position: relative;
+    height: 100vh;
+    background: #E5E5E5;
+}
+
+.education > .title {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    left: 100px;
+    top: 80px;
+}
+
+.education > .title::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #FFA500;
+    border-radius: 30px;
+}
+
+.education > .content {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.education > .content > div {
+    position: relative;
+    width: 750px;
+    height: 120px;
+    background: #D7D7D7;
+    box-shadow: 14px 14px 10px 1px #928c8c;
+}
+
+.education > .content > .ijse::after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background: #1C2520;
+    bottom: 0;
+    transform: translateY(25px);
+}
+
+.education > .content > .ijse > .logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url("../asserts/logo/ijse.png") no-repeat center;
+    background-size: contain;
+    top: 0;
+    left: 10px;
+    transform: rotate(-360deg);
+}
+
+.education > .content > .ssbc > .logo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../asserts/logo/ssbc.png") no-repeat center;
+    background-size: cover;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.education > .content > div > .sub-title, .education-type, .year {
+    position: absolute;
+    left: 150px;
+}
+
+.education > .content > div > .sub-title {
+    font-size: 16px;
+    top: 20px;
+}
+
+.education > .content > div > .education-type {
+    font-size: 22px;
+    top: 50px;
+}
+
+.education > .content > div > .year {
+    font-size: 15px;
+    font-weight: 100;
+    top: 80px;
+}
+
+.education > .content > div > .btn-more {
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    width: 80px;
+    height: 20px;
+    background: #FFA500;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 3px 6px 2px #899096;
+    transition: all 0.6s ease;
+}
+
+.education > .content > div > .btn-more:hover {
+    transition: all 0.6s ease;
+    background: #1C2520;
+    color: #E4E5E8;
+    box-shadow: 1px 3px 6px 2px #242b2b;
+    transform: translate(0, -10px);
+}
+
+.education > .content > div > .btn-more:focus {
+    outline: none !important;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+
+/*Project styling*/
+.projects {
+    position: relative;
+    height: 110vh;
+    background: rgba(34, 32, 32, 0.84);
+}
+
+.projects > .title {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    color: #E5E5E5;
+    left: 100px;
+    top: 80px;
+}
+
+.projects > .title::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #FFA500;
+    border-radius: 30px;
+}
+
+.projects > div {
+    position: absolute;
+}
+
+.projects > .swing_star {
+    width: 100px;
+    height: 400px;
+    background: url("../asserts/projects/star.png") no-repeat center;
+    background-size: cover;
+    animation: swing-star 1s ease-in-out alternate infinite;
+    transform-origin:center -20px;
+}
+
+.projects > .swing_moon {
+    width: 200px;
+    height: 600px;
+    background: url("../asserts/projects/moon.png") no-repeat center;
+    background-size: cover;
+    animation:swing-moon 1s ease-in-out alternate infinite;
+    transform-origin:center -20px;
+}
+
+.projects > section {
+    position: absolute;
+    width: 800px;
+    height: 280px;
+}
+
+.projects > section > .content {
+    position: absolute;
+    display: flex;
+    gap: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color: white;
+    width: 800px;
+    bottom: 0;
+}
+
+.projects > .java {
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%, -50%);
+}
+
+.projects > .javascript {
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projects > section > .content > article {
+    position: relative;
+    width: 200px;
+    height: 230px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.projects > section > .content > article:hover {
+    width: 400px;
+    height: 240px;
+    transform: translateY(15px);
+    transition: all 0.6s ease;
+}
+
+.projects > section > .content > article:hover > .projects > .title {
+    color: #e74c3c;
+    transition: all 0.6s ease;
+}
+
+.projects > section > .content > article::before {
+    position: absolute;
+    content: " ";
+    width: 1px;
+    height: 100%;
+    background: #1a1919;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.projects > section > .content > article::after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: #656060;
+    opacity: 0.2;
+    transition: all 0.6s ease-in-out;
+}
+
+.projects > section > .content > article:hover::before {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in;
+}
+
+.projects > .java > .content > .project1 {
+    background: url("../asserts/projects/diyaulpatha.png") no-repeat center;
+    background-size: cover;
+}
+
+.projects > .java > .content > .project2 {
+    background: url("../asserts/projects/pos-system(java).png") no-repeat center;
+    background-size: cover;
+}
+
+.projects > .java > .content > .project3 {
+    background: url("../asserts/projects/vehicleparking.png") no-repeat center;
+    background-size: cover;
+}
+
+.projects > .javascript > .content > .project1 {
+    background: url("../asserts/projects/pos(js).jpg") no-repeat center;
+    background-size: cover;
+}
+
+.projects > .javascript > .content > .project2 {
+    background: url("../asserts/projects/web-dev-1.png") no-repeat center;
+    background-size: cover;
+}
+
+.projects > .javascript > .content > .project3 {
+    background: url("../asserts/projects/web-dev-2.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.projects > section > .content > article > .title {
+    position: absolute;
+    top: -40px;
+    font-size: 16px;
+    transition: all 0.6s ease;
+}
+
+.projects > section > .content > article:hover > .title {
+    font-size: 25px;
+    top: 30%;
+    left: 30px;
+    width: max-content;
+    transform: translateY(-50%);
+    transition: all 0.6s ease;
+}
+
+.projects > section > .content > article > .description {
+    position: absolute;
+    font-size: 12px;
+    bottom: -20px;
+    right: 3px;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.projects > section > .content > article:hover > .description {
+    bottom: 20px;
+    opacity: 1;
+    transition: all 0.8s ease;
+}
+
+.projects > .more {
+    position: absolute;
+    right: 300px;
+    bottom: 40px;
+    width: 80px;
+    height: 20px;
+    background: #FFA500;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 3px 6px 2px #181819;
+    transition: all 0.6s ease;
+}
+
+.projects > .more:hover {
+    transition: all 0.6s ease;
+    color: white;
+    background: #1C2520;
+    box-shadow: 1px 3px 6px 2px #181819;
+    transform: translate(0, -10px);
+}
+
+.projects > .more:hover {
+    outline: none !important;
+}
+
+.projects > .more > a {
+    color: black;
+    transition: all 0.6s ease;
+}
+
+.projects > .more:hover > a {
+    color: #E4E5E8;
+    transition: all 0.6s ease;
+}
+
+/*-------------------------------------------------------------------------*/
+
+/*Contact styling*/
+.contact {
+    position: relative;
+    height: 1380px;
+    background: #E5E5E5;
+}
+
+.contact > .title {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    left: 100px;
+    top: 80px;
+}
+
+.contact > .title::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: " ";
+    width: 100%;
+    height: 8px;
+    background: #FFA500;
+    border-radius: 30px;
+}
+
+.contact > .content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.contact > .content > section {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    width: 800px;
+}
+
+.contact > .content > .content-1::after {
+    position: absolute;
+    content: " ";
+    bottom: -50px;
+    width: 100%;
+    height: 1px;
+    background: black;
+}
+
+.contact > .content > .content-1 > .sub-title {
+    position: relative;
+}
+
+.contact > .content > .content-1 > .sub-content {
+    position: relative;
+    padding-top: 20px;
+    padding-left: 50px;
+    font-weight: 100;
+}
+
+.contact > .content > .content-1 > .sub-content > .paragraph-1 {
+    padding-bottom: 20px;
+}
+
+.contact > .content > .content-2 {
+    height: 400px;
+    padding-top: 50px;
+}
+
+.contact > .content > .content-2::after {
+    position: absolute;
+    content: " ";
+    bottom: -50px;
+    width: 100%;
+    height: 1px;
+    background: black;
+}
+
+.contact > .content > .content-2 > .phone {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+}
+
+.contact > .content > .content-2 > .phone > .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../asserts/icons/icon - contact.png") no-repeat center;
+    background-size: cover;
+}
+
+.contact > .content > .content-2 > .phone > .title {
+    position: absolute;
+    font-size: 15px;
+    top: 0;
+    left: 70px;
+}
+
+.contact > .content > .content-2 > .phone > .contact-number {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 100;
+    top: 30px;
+    left: 70px;
+}
+
+.contact > .content > .content-2 > .location {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    right: 0;
+}
+
+.contact > .content > .content-2 > .location > .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../asserts/icons/icon - location.png") no-repeat center;
+    background-size: cover;
+}
+
+.contact > .content > .content-2 > .location > .title {
+    position: absolute;
+    font-size: 15px;
+    top: 0;
+    left: 70px;
+}
+
+.contact > .content > .content-2 > .location > .address {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 100;
+    top: 30px;
+    left: 70px;
+}
+
+.contact > .content > .content-2 > .email {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 150px;
+}
+
+.contact > .content > .content-2 > .email > .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../asserts/icons/icon - email.png") no-repeat center;
+    background-size: cover;
+}
+
+.contact > .content > .content-2 > .email > .title {
+    position: absolute;
+    font-size: 15px;
+    top: 0;
+    left: 70px;
+}
+
+.contact > .content > .content-2 > .email > .email-address {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 100;
+    top: 30px;
+    left: 70px;
+}
+
+.contact > .content > .content-2 > .sub-title {
+    position: absolute;
+    top: 280px;
+}
+
+.contact > .content > .content-2 > .paragraph {
+    position: absolute;
+    top: 320px;
+    left: 50px;
+    font-weight: 100;
+}
+
+.contact > .content > .content-2 > div {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    right: 0;
+    background: #e74c3c;
+}
+
+.contact > .content > .content-2 > .socialmedia {
+    position: absolute;
+    bottom: 0;
+}
+
+.contact > .content > .content-2 > .socialmedia > .list {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact > .content > .content-2 > .socialmedia > .list > li {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.contact > .content > .content-2 > .socialmedia > .list > li > a > .fab, .icon-freelancer, .icon-fiverr {
+    transition: .6s;
+}
+
+.contact > .content > .content-2 > .socialmedia > .list > li > a > .fab:hover {
+    transition: all .6s ease;
+    transform: translate(0, -10px);
+    color: #808080;
+}
+
+.contact > .content > .content-2 > .socialmedia > .list > .facebook > a {
+    color: #3b5998;
+}
+
+.contact > .content > .content-2 > .socialmedia > .list > .twitter > a {
+    color: #00acee;
+}
+
+.contact > .content > .content-2 > .socialmedia > .list > .linkedin > a {
+    color: #0e76a8;
+}
+
+.contact > .content > .content-2 > .socialmedia > .list > .github > a {
+    color: #171515;
+}
+
+.svg-freelancer {
+    background-image: url("../asserts/icons/freelancer-blue.svg");
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 20px;
+    transition: all 0.6s ease;
+    left: 250px;
+    transform: translateY(5px);
+}
+
+.svg-freelancer:hover {
+    background-image: url("../asserts/icons/freelancer-gray.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 30px;
+    transition: all 0.6s ease;
+    transform: translate(0, -10px);
+}
+
+.svg-fiverr {
+    background-image: url("../asserts/icons/fiverr-green.svg");
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 25px;
+    transition: all 0.6s ease;
+    left: 305px;
+}
+
+.svg-fiverr:hover {
+    background-image: url("../asserts/icons/fiverr-gray.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 30px;
+    transition: all 0.6s ease;
+    transform: translate(0, -10px);
+}
+
+.contact > .content > .content-3 {
+    padding-top: 50px;
+    height: 450px;
+}
+
+.contact > .content > .content-3 > .title {
+    position: absolute;
+}
+
+.contact > .content > .content-3 > .content {
+    position: absolute;
+    top: 100px;
+}
+
+.contact > .content > .content-3 > .content > .name, .mail-address {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #8a8a8e;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.contact > .content > .content-3 > .content > .message {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #8a8a8e;
+    resize: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.contact > .content > .content-3 > .content > .name:focus, .mail-address:focus, .message:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #8a8a8e;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.contact > .content > .content-3 > .content > .say-hello {
+    width: 100px;
+    height: 35px;
+    background: white;
+    border-radius: 30px;
+    border: 3px solid #FFA500;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+    box-shadow: 0 0 10px #8a8a8e;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.contact > .content > .content-3 > .content > .say-hello:hover {
+    background: #1C2520;
+    color: white;
+    font-weight: 700;
+    border: none;
+    transform: translateY(1px);
+    transition: all 0.6s ease;
+}
+
+.contact > .content > .content-3 > .content > .say-hello:focus {
+    outline: none !important;
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+/*Footer styling*/
+footer {
+    position: relative;
+    height: 50px;
+    background: #222222;
+}
+
+footer > h3 {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*--------------------------------------------*/
+
+
+/*Animations*/
+@keyframes quotes-designer {
+    0% {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 1px 5px 14px 4px #928c8c;
+        left: 30%;
+        transform: translate(-50%, -25px);
+    }
+    50% {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 1px 5px 14px 4px #928c8c;
+        left: 30%;
+        transform: translate(-50%, -25px);
+    }
+}
+
+@keyframes quotes-coder {
+    49.9% {
+        background: #FFA500;
+        border-radius: 20px;
+        box-shadow: 1px 5px 14px 4px #928c8c;
+        left: 70%;
+        transform: translate(-50%, -25px);
+    }
+    100% {
+        background: #FFA500;
+        border-radius: 20px;
+        box-shadow: 1px 5px 14px 4px #928c8c;
+        left: 70%;
+        transform: translate(-50%, -25px);
+    }
+}
+
+@keyframes swing-star {
+    0% {
+        transform:rotate(6deg);
+        top: 118px;
+        left: 80px;
+    }
+    to {
+        transform:rotate(-6deg);
+        top: 118px;
+        left: 80px;
+    }
+}
+
+@keyframes swing-moon {
+    0% {
+        right: 100px;
+        transform:rotate(-3deg)
+    }
+    to {
+        right: 100px;
+        transform:rotate(3deg)
+    }
+}
+
+
+/*Media Queries*/
+@media all and (max-width: 1475px) {
+    .about > .content {
+        left: 55%;
+    }
+}
+
+@media all and (max-width: 1438px) {
+    .quotes > .designer {
+        left: 25%;
+    }
+    .quotes > .coder {
+        left: 75%;
+    }
+    @keyframes quotes-designer {
+        0% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 25%;
+            transform: translate(-50%, -25px);
+        }
+        50% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 25%;
+            transform: translate(-50%, -25px);
+        }
+    }
+    @keyframes quotes-coder {
+        49.9% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 75%;
+            transform: translate(-50%, -25px);
+        }
+        100% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 75%;
+            transform: translate(-50%, -25px);
+        }
+    }
+}
+
+@media all and (max-width: 1420px) {
+    .home > .text {
+        left: 800px;
+    }
+}
+
+@media all and (max-width: 1352px) {
+    .about > .profilephoto {
+        left: 20%;
+    }
+    .about > .content {
+        left: 55%;
+    }
+}
+
+@media all and (max-width: 1320px) {
+    .home > .text {
+        left: 700px;
+    }
+}
+
+@media all and (max-width: 1255px) {
+    .service {
+        background: #1dbf73;
+    }
+}
+
+@media all and (max-width: 1182px) {
+    .quotes > .designer {
+        left: 20%;
+    }
+    .quotes > .coder {
+        left: 80%;
+    }
+    @keyframes quotes-designer {
+        0% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 20%;
+            transform: translate(-50%, -25px);
+        }
+        50% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 20%;
+            transform: translate(-50%, -25px);
+        }
+    }
+    @keyframes quotes-coder {
+        49.9% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 80%;
+            transform: translate(-50%, -25px);
+        }
+        100% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 80%;
+            transform: translate(-50%, -25px);
+        }
+    }
+}
+
+@media all and (max-width: 1128px) {
+    .about {
+        height: 125vh;
+    }
+    .about > .profilephoto {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .about > .content {
+        top: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+
