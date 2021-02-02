@@ -2598,7 +2598,7 @@ footer > h3 {
     }
 }
 
-@media all and (max-height: 760px) and (max-width: 426px){
+@media all and (max-height: 760px) {
     .about {
         height: 100vh;
     }
