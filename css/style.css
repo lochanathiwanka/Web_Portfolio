@@ -151,7 +151,7 @@
 
 .about > .profilephoto {
     position: absolute;
-    width: 400px;
+    width: 330px;
     height: 400px;
     top: 150px;
     left: 300px;
@@ -179,7 +179,7 @@
 .about > .content {
     position: absolute;
     font-family: 'Ubuntu', sans-serif;
-    left: 50%;
+    left: 750px;
     top: 130px;
     width: 450px;
     height: 470px;
@@ -448,7 +448,7 @@
     top: 80px;
     left: 0;
     right: 0;
-    bottom: 100px;
+    bottom: -60px;
     margin: auto;
     background: no-repeat center;
     background-size: cover;
@@ -459,7 +459,7 @@
 /*Service styling*/
 .service {
     position: relative;
-    height: 100vh;
+    height: 800px;
     background: rgba(34, 32, 32, 0.84);
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 20px;
@@ -616,7 +616,7 @@
 
 /*Skills styling*/
 .skills {
-    height: 110vh;
+    height: 860px;
     position: relative;
     background: #E5E5E5;
 }
@@ -1132,7 +1132,7 @@
 /*Portfolio styling*/
 .portfolio {
     position: relative;
-    height: 100vh;
+    height: 800px;
     background: #E5E5E5;
 }
 
@@ -1304,7 +1304,7 @@
 /*Education styling*/
 .education {
     position: relative;
-    height: 70vh;
+    height: 500px;
     background: #E5E5E5;
 }
 
@@ -1431,7 +1431,7 @@
 /*Project styling*/
 .projects {
     position: relative;
-    height: 110vh;
+    height: 880px;
     background: rgba(34, 32, 32, 0.84);
 }
 
@@ -1495,12 +1495,12 @@
 
 .projects > .java {
     left: 50%;
-    top: 32%;
+    top: 35%;
     transform: translate(-50%, -50%);
 }
 
 .projects > .javascript {
-    top: 52%;
+    top: 55%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -2091,7 +2091,7 @@ footer > h3 {
 }
 
 
-/*Media Queries*/
+Media Queries
 @media all and (max-width: 1475px) {
     .about > .content {
         left: 55%;
@@ -2232,7 +2232,7 @@ footer > h3 {
 
 @media all and (max-width: 1128px) {
     .about {
-        height: 125vh;
+        height: 1080px;
     }
     .about > .profilephoto {
         left: 50%;
@@ -2313,13 +2313,15 @@ footer > h3 {
 
 @media all and (max-width: 939px) {
     .quotes > .thinking-image {
-        right: 50%;
+        position: relative;
+        top: 40px;
+        left: 100px;
     }
     .quotes > .designer {
-        left: 65%;
+        left: 600px;
     }
     .quotes > .coder {
-        left: 65%;
+        left: 600px;
         top: 350px;
     }
     @keyframes quotes-designer {
@@ -2327,14 +2329,14 @@ footer > h3 {
             background: white;
             border-radius: 20px;
             box-shadow: 1px 5px 14px 4px #928c8c;
-            left: 65%;
+            left: 600px;
             transform: translate(-50%, -25px);
         }
         50% {
             background: white;
             border-radius: 20px;
             box-shadow: 1px 5px 14px 4px #928c8c;
-            left: 65%;
+            left: 600px;
             transform: translate(-50%, -25px);
         }
     }
@@ -2343,7 +2345,7 @@ footer > h3 {
             background: #FFA500;
             border-radius: 20px;
             box-shadow: 1px 5px 14px 4px #928c8c;
-            left: 65%;
+            left: 600px;
             top: 350px;
             transform: translate(-50%, -25px);
         }
@@ -2351,7 +2353,7 @@ footer > h3 {
             background: #FFA500;
             border-radius: 20px;
             box-shadow: 1px 5px 14px 4px #928c8c;
-            left: 65%;
+            left: 600px;
             top: 350px;
             transform: translate(-50%, -25px);
         }
@@ -2364,12 +2366,20 @@ footer > h3 {
     }
 }
 
-@media all and (max-width: 840px) {
+@media all and (max-width: 768px) {
+    .about > .title {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .quotes > .thinking-image {
+        position: relative;
+        left: 40px;
+    }
     .quotes > .designer {
-        left: 70%;
+        left: 500px;
     }
     .quotes > .coder {
-        left: 70%;
+        left: 500px;
         top: 350px;
     }
     @keyframes quotes-designer {
@@ -2377,14 +2387,14 @@ footer > h3 {
             background: white;
             border-radius: 20px;
             box-shadow: 1px 5px 14px 4px #928c8c;
-            left: 70%;
+            left: 500px;
             transform: translate(-50%, -25px);
         }
         50% {
             background: white;
             border-radius: 20px;
             box-shadow: 1px 5px 14px 4px #928c8c;
-            left: 70%;
+            left: 500px;
             transform: translate(-50%, -25px);
         }
     }
@@ -2393,7 +2403,7 @@ footer > h3 {
             background: #FFA500;
             border-radius: 20px;
             box-shadow: 1px 5px 14px 4px #928c8c;
-            left: 70%;
+            left: 500px;
             top: 350px;
             transform: translate(-50%, -25px);
         }
@@ -2401,8 +2411,285 @@ footer > h3 {
             background: #FFA500;
             border-radius: 20px;
             box-shadow: 1px 5px 14px 4px #928c8c;
-            left: 70%;
+            left: 500px;
             top: 350px;
+            transform: translate(-50%, -25px);
+        }
+    }
+}
+
+@media all and (max-width: 678px) {
+    .quotes > .designer{
+        width: 220px;
+        height: 210px;
+        font-size: 16px;
+    }
+    .quotes > .coder {
+        width: 220px;
+        height: 210px;
+        font-size: 16px;
+    }
+    .quotes > .designer > .author {
+        font-size: 13px;
+    }
+    .quotes > .coder > .author {
+        font-size: 13px;
+    }
+    .quotes > .designer > .content {
+        top: 70px;
+        left: 0;
+    }
+    .quotes > .coder > .content {
+        top: 70px;
+    }
+}
+
+@media all and (max-width: 626px) {
+    .quotes > .designer {
+        width: 200px;
+        left: 430px;
+    }
+    .quotes > .coder {
+        width: 200px;
+        left: 430px;
+        top: 350px;
+    }
+    .quotes > .designer > .content {
+        top: 50px;
+        left: 0;
+    }
+    .quotes > .coder > .content {
+        top: 35px;
+    }
+    @keyframes quotes-designer {
+        0% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 430px;
+            transform: translate(-50%, -25px);
+        }
+        50% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 430px;
+            transform: translate(-50%, -25px);
+        }
+    }
+    @keyframes quotes-coder {
+        49.9% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 430px;
+            top: 350px;
+            transform: translate(-50%, -25px);
+        }
+        100% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 430px;
+            top: 350px;
+            transform: translate(-50%, -25px);
+        }
+    }
+}
+
+@media all and (max-width: 545px) {
+    .quotes > .thinking-image {
+        left: 22px;
+        width: 240px;
+        top: 110px;
+    }
+    .quotes > .designer {
+        width: 180px;
+        left: 360px;
+        top: 100px;
+    }
+    .quotes > .coder {
+        width: 180px;
+        left: 360px;
+        top: 350px;
+    }
+    @keyframes quotes-designer {
+        0% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 360px;
+            transform: translate(-50%, -25px);
+        }
+        50% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 360px;
+            transform: translate(-50%, -25px);
+        }
+    }
+    @keyframes quotes-coder {
+        49.9% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 360px;
+            top: 350px;
+            transform: translate(-50%, -25px);
+        }
+        100% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 360px;
+            top: 350px;
+            transform: translate(-50%, -25px);
+        }
+    }
+}
+
+@media all and (max-width: 475px) {
+    .about {
+        height: 980px;
+    }
+    .about > .content {
+        width: 100vw;
+        height: 380px;
+    }
+    .about > .content > .header1 {
+        font-size: 26px;
+        left: 10%;
+    }
+    .about > .content > .header2 {
+        font-size: 18px;
+        left: 10%;
+    }
+    .about > .content > p {
+        font-size: 17px;
+        left: 10%;
+    }
+    .about > .content > :nth-child(4) {
+        top: 210px;
+    }
+    .about > .content > button {
+        font-size: 12px;
+        width: 140px;
+        height: 20px;
+        top: 300px;
+    }
+    .about > .content > .btnHireMe {
+        left: 10%;
+    }
+    .about > .content > .btnCV {
+        right: 10%;
+    }
+    .about > .content > .socialmedia {
+        bottom: 0;
+        left: 40%;
+        transform: translateX(-50%);
+    }
+    .about > .content > .socialmedia > .list {
+        font-size: 25px;
+    }
+
+    .quotes > .designer{
+        width: 170px;
+        height: 210px;
+        font-size: 15px;
+    }
+    .quotes > .coder {
+        width: 170px;
+        height: 210px;
+        font-size: 15px;
+    }
+    .quotes > .designer > .author {
+        font-size: 13px;
+    }
+    .quotes > .coder > .author {
+        font-size: 13px;
+    }
+    .quotes > .designer > .content {
+        top: 45px;
+        left: 0;
+    }
+    .quotes > .coder > .content {
+        top: 45px;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .quotes {
+        position: relative;
+        padding: 0;
+        height: 450px;
+    }
+    .quotes > .thinking-image {
+        all: initial;
+        position: absolute;
+        width: 210px;
+        bottom: 0;
+    }
+    .quotes > .designer{
+        left: 310px;
+        top: 40px;
+        width: 150px;
+        height: 180px;
+        font-size: 13px;
+    }
+    .quotes > .coder {
+        width: 150px;
+        height: 180px;
+        font-size: 13px;
+        left: 310px;
+        top: 250px;
+    }
+    .quotes > .designer > .author {
+        font-size: 12px;
+    }
+    .quotes > .coder > .author {
+        font-size: 12px;
+    }
+    .quotes > .designer > .content {
+        top: 45px;
+        left: 0;
+    }
+    .quotes > .coder > .content {
+        top: 45px;
+    }
+    @keyframes quotes-designer {
+        0% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 310px;
+            top: 40px;
+            transform: translate(-50%, -25px);
+        }
+        50% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 310px;
+            top: 40px;
+            transform: translate(-50%, -25px);
+        }
+    }
+    @keyframes quotes-coder {
+        49.9% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 310px;
+            top: 250px;
+            transform: translate(-50%, -25px);
+        }
+        100% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 310px;
+            top: 250px;
             transform: translate(-50%, -25px);
         }
     }
@@ -2431,7 +2718,7 @@ footer > h3 {
         transform: translate(-50%, -50%);
     }
 
-    .about {
+    /*.about {
         height: 1080px;
     }
     .about > .title {
@@ -2480,9 +2767,9 @@ footer > h3 {
     }
     .about > .content > .socialmedia > .list {
         font-size: 25px;
-    }
+    }*/
 
-    .quotes > .thinking-image {
+    /*.quotes > .thinking-image {
         width: 200px;
     }
     .quotes > .designer{
@@ -2507,7 +2794,7 @@ footer > h3 {
     }
     .quotes > .coder > .content {
         top: 45px;
-    }
+    }*/
 
     .service > .title {
         left: 50%;
@@ -2576,94 +2863,11 @@ footer > h3 {
 }
 
 
-/*----------------------------------------------*/
-@media all and (max-height: 900px) and (min-height: 800px) {
-    .service {
-        height: 90vh;
-    }
-    .projects {
-        height: 100vh;
-    }
-    .projects > .java {
-        top: 35%;
-    }
-    .projects > .javascript {
-        top: 55%;
-    }
-}
-
-@media all and (max-height: 100vh) and (max-width: 988px) {
-    .service {
-        height: 130vh;
-    }
-}
-
-@media all and (max-height: 760px) {
-    .about {
-        height: 100vh;
-    }
-    .service {
-        height: 120vh;
-    }
-    .skills {
-        height: 125vh;
-    }
-    .skills > .content {
-        top: 53%;
-    }
-    .portfolio {
-        height: 120vh;
-    }
-    .portfolio > .frame {
-        top: 58%;
-    }
-    .education {
-        height: 80vh;
-    }
-}
-
-@media all and (max-height: 625px) {
-    .service {
-        height: 170vh;
-    }
-    .skills {
-        height: 185vh;
-    }
-    .skills > .content {
-        top: 53%;
-    }
-    .portfolio {
-        height: 180vh;
-    }
-    .portfolio > .frame {
-        top: 58%;
-    }
-    .education {
-        height: 120vh;
-    }
-    .projects {
-        height: 190vh;
-    }
-    .projects > .java {
-        top: 35%;
-    }
-    .projects > .javascript {
-        top: 55%;
-    }
-    .projects > .more {
-        right: 10%;
-        bottom: 40px;
-    }
-    .projects > .more:hover {
-        transform: translate(0, -10px);
-    }
-}
-
-@media all and (max-width: 425px) {
+/*@media all and (max-width: 425px) {
     .about {
         height: 1000px;
     }
     .service {
         height: 1080px;
     }
-}
+}*/
