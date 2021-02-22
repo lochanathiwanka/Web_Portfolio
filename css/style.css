@@ -13,7 +13,12 @@
     width: 100vw;
     height: 50px;
     transition: all 0.3s ease;
-    background: #6f6f6f;
+}
+
+.headerBar.sticky {
+    padding: 5px 5px;
+    background: #b8b8b5;
+    transition: all 0.3s ease;
 }
 
 .logo {
@@ -26,6 +31,16 @@
     transition: color 0.4s ease;
     transform: rotate(90deg);
     letter-spacing: -3.5px;
+}
+
+.headerBar.sticky > .logo {
+    color: black;
+    transition: color 0.4s ease;
+}
+
+.headerBar.sticky > .logo > span {
+    color: #d28901;
+    transition: color 0.4s ease;
 }
 
 .headerBar > .menu {
@@ -47,9 +62,19 @@
     transition: color 0.3s ease;
 }
 
+.headerBar.sticky .menu > li > a {
+    color: black;
+    transition: all 0.3s ease;
+}
+
 .headerBar > .menu > li > a:hover {
     color: #FFA500;
     transition: color 0.3s ease;
+}
+
+.headerBar.sticky .menu > li > a:hover {
+    color: #F2F0FC;
+    transition: all 0.3s ease;
 }
 
 .headerBar > .menu-icon {
@@ -72,9 +97,19 @@
     transition: color 0.3s ease;
 }
 
+.headerBar.sticky .menu-icon > li > a {
+    color: black;
+    transition: all 0.3s ease;
+}
+
 .headerBar > .menu-icon > li > a:hover {
     color: #FFA500;
     transition: color 0.3s ease;
+}
+
+.headerBar.sticky .menu-icon > li > a:hover {
+    color: #F2F0FC;
+    transition: all 0.3s ease;
 }
 
 .headerBar > .menu-btn {
@@ -82,6 +117,10 @@
     display: none;
     cursor: pointer;
     color: white;
+}
+
+.headerBar.sticky .menu-btn {
+    color: black;
 }
 
 /*------------------------------------------------------------*/
@@ -2279,13 +2318,17 @@ Media Queries
         display: flex;
         font-size: 20px;
     }
+
+    .service {
+        height: 1100px;
+    }
     .service > .content {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 70px;
-        left: 50%;
+        /*left: 50%;
         top: 55%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);*/
     }
     .service > .content > .web-design::after, .graphic-design::after {
         display: none;
@@ -2416,6 +2459,17 @@ Media Queries
             transform: translate(-50%, -25px);
         }
     }
+
+    .service > .title {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .service > .content {
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        width: 560px;
+    }
 }
 
 @media all and (max-width: 678px) {
@@ -2494,6 +2548,37 @@ Media Queries
             top: 350px;
             transform: translate(-50%, -25px);
         }
+    }
+}
+
+@media all and (max-width: 610px) {
+    .service {
+        height: 1980px;
+    }
+    .service > .content {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+        left: 50%;
+        top: 53%;
+        transform: translate(-50%, -50%);
+        width: 260px;
+    }
+
+    .service > .content > article > div {
+
+    }
+    .service > .content > .web-design::after, .graphic-design::after {
+        display: none;
+    }
+    .service > .content > .app-development::after {
+        display: none;
+    }
+    .service > .content > .web-development::after {
+        display: none;
+    }
+    .service > .content > .innovative-ideas::after {
+        display: none;
     }
 }
 
