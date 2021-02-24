@@ -2383,7 +2383,7 @@ footer > h3 {
         border-radius: 30px;
         transform: rotate(270deg);
     }
-    .service > .content > .innovative-ideas::after {
+    .service > .content > .innovative-ideas::after{
         left: 155px;
         top: 760px;
     }
@@ -2609,32 +2609,91 @@ footer > h3 {
 
 @media all and (max-width: 610px) {
     .service {
-        height: 1980px;
+        height: 1000px;
     }
     .service > .content {
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 50px;
-        left: 50%;
-        top: 53%;
-        transform: translate(-50%, -50%);
-        width: 260px;
+        width: 536px;
     }
-
-    .service > .content > article > div {
-
+    .service > .content > article {
+        width: 232px;
     }
-    .service > .content > .web-design::after, .graphic-design::after {
-        display: none;
+    .service > .content > .app-development > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > .web-design > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > .web-development > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > .graphic-design > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > .innovative-ideas > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > .e-commerce > .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .service > .content > article > .sub-title {
+        font-size: 21px;
+    }
+    .service > .content > article > .sub-content {
+        font-size: 18px;
+    }
+    .service > .content > article > .read-more > a {
+        font-size: 13px;
     }
     .service > .content > .app-development::after {
-        display: none;
+        width: 230px;
     }
     .service > .content > .web-development::after {
-        display: none;
+        width: 230px;
+        top: 410px;
     }
     .service > .content > .innovative-ideas::after {
-        display: none;
+        width: 230px;
+        top: 700px;
+    }
+}
+
+@media all and (max-width: 570px) {
+    .service > .content {
+        grid-column-gap: 30px;
+        width: 445px;
+    }
+    .service > .content > article {
+        width: 205px;
+    }
+    .service > .content > article > .sub-title {
+        font-size: 19px;
+    }
+    .service > .content > article > .sub-content {
+        font-size: 16px;
+    }
+    .service > .content > article > .read-more > a {
+        font-size: 11px;
+    }
+    .service > .content > .app-development::after {
+        width: 220px;
+        left: 110px;
+    }
+    .service > .content > .web-development::after {
+        width: 220px;
+        top: 405px;
+        left: 110px;
+    }
+    .service > .content > .innovative-ideas::after {
+        width: 220px;
+        top: 690px;
+        left: 110px;
     }
 }
 
@@ -2834,6 +2893,44 @@ footer > h3 {
             transform: translate(-50%, -25px);
         }
     }
+
+    .service {
+        height: 960px;
+    }
+    .service > .content {
+        grid-column-gap: 30px;
+        grid-row-gap: 50px;
+        width: 395px;
+        left: 50%;
+        top: 56%;
+        transform: translate(-50%, -50%);
+    }
+    .service > .content > .app-development::after{
+        left: 70px;
+    }
+    .service > .content > .web-development::after{
+        left: 70px;
+    }
+    .service > .content > .innovative-ideas::after{
+        left: 70px;
+    }
+    .service > .content > article {
+        width: 180px;
+    }
+    .service > .content > article > .sub-title {
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .service > .content > article > .sub-content {
+        font-size: 15px;
+        color: white;
+        width: 180px;
+        height: 90px;
+    }
+    .service > .content > article > .read-more > a {
+        font-size: 12px;
+    }
 }
 
 @media all and (max-width: 458px) {
@@ -2874,7 +2971,7 @@ footer > h3 {
         height: 410px;
     }
     .about > .content > p {
-        margin-left: 50px;
+        margin-left: 30px;
     }
     .about > .content > :nth-child(4) {
         padding-top: 10px;
@@ -2882,47 +2979,20 @@ footer > h3 {
     .about > .content > .button-container {
         top: 330px;
     }
+}
 
-    /*.quotes > .thinking-image {
-        width: 200px;
-    }
-    .quotes > .designer{
-        width: 170px;
-        height: 210px;
-        font-size: 15px;
-    }
-    .quotes > .coder {
-        width: 170px;
-        height: 210px;
-        font-size: 15px;
-    }
-    .quotes > .designer > .author {
-        font-size: 13px;
-    }
-    .quotes > .coder > .author {
-        font-size: 13px;
-    }
-    .quotes > .designer > .content {
-        top: 45px;
-        left: 0;
-    }
-    .quotes > .coder > .content {
-        top: 45px;
-    }*/
-
-    .service > .title {
-        left: 50%;
-        transform: translateX(-50%);
+@media all and (max-width: 410px) {
+    .service {
+        height: 1850px;
     }
     .service > .content {
-        position: absolute;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 40px;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 50px;
+        width: 182px;
         left: 50%;
-        top: 58%;
-        transform: translate(-50%, -50%);
+        top: 54%;
     }
     .service > .content > .app-development::after{
         left: 70px;
@@ -2936,43 +3006,17 @@ footer > h3 {
     .service > .content > article {
         width: 180px;
     }
-    .service > .content > .app-development > .icon {
-        width: 40px;
-        height: 40px;
+    .service > .content > .web-design::after, .graphic-design::after {
+        display: none;
     }
-    .service > .content > .web-design > .icon {
-        width: 40px;
-        height: 40px;
+    .service > .content > .app-development::after {
+        display: none;
     }
-    .service > .content > .web-development > .icon {
-        width: 40px;
-        height: 40px;
+    .service > .content > .web-development::after {
+        display: none;
     }
-    .service > .content > .graphic-design > .icon {
-        width: 40px;
-        height: 40px;
-    }
-    .service > .content > .innovative-ideas > .icon {
-        width: 40px;
-        height: 40px;
-    }
-    .service > .content > .e-commerce > .icon {
-        width: 40px;
-        height: 40px;
-    }
-    .service > .content > article > .sub-title {
-        font-size: 18px;
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    .service > .content > article > .sub-content {
-        font-size: 15px;
-        color: white;
-        width: 180px;
-        height: 90px;
-    }
-    .service > .content > article > .read-more > a {
-        font-size: 12px;
+    .service > .content > .innovative-ideas::after {
+        display: none;
     }
 }
 
@@ -3189,6 +3233,40 @@ footer > h3 {
     }
 }
 
+@media all and (max-width: 310px) {
+    .about {
+        height: 990px;
+    }
+    .about > .content {
+        height: 485px;
+    }
+    .about > .content > .header1 {
+        text-align: center;
+        width: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .about > .content > .header2 {
+        text-align: center;
+        width: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100px;
+    }
+    .about > .content > p {
+        transform: translateY(70px);
+        font-size: 16px;
+    }
+    .about > .content > .button-container {
+        top: 410px;
+        width: 230px;
+    }
+    .about > .content > .button-container > button {
+        width: 80px;
+        font-size: 10px;
+    }
+}
+
 @media all and (max-width: 298px) {
     .about > .profilephoto {
         width: 230px;
@@ -3268,6 +3346,42 @@ footer > h3 {
             top: 270px;
             transform: translate(-50%, -25px);
         }
+    }
+}
+
+@media all and (max-width: 278px) {
+    .about {
+        height: 990px;
+    }
+    .about > .content {
+        height: 485px;
+    }
+    .about > .content > .header1 {
+        text-align: center;
+        font-size: 24px;
+        width: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .about > .content > .header2 {
+        text-align: center;
+        font-size: 17px;
+        width: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100px;
+    }
+    .about > .content > p {
+        transform: translateY(70px);
+        font-size: 15px;
+    }
+    .about > .content > .button-container {
+        top: 410px;
+        width: 230px;
+    }
+    .about > .content > .button-container > button {
+        width: 80px;
+        font-size: 10px;
     }
 }
 
