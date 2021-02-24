@@ -21,7 +21,7 @@
     transition: all 0.3s ease;
 }
 
-.logo {
+.headerBar > .logo {
     position: absolute;
     font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
@@ -174,7 +174,6 @@
     left: 100px;
     top: 60px;
     padding-bottom: 10px;
-    transition: all 10s ease;
 }
 
 .about > .title::after {
@@ -198,16 +197,16 @@
 
 .about > .profilephoto > .image {
     position: absolute;
-    width: 300px;
-    height: 350px;
+    width: 85%;
+    height: 85%;
     border-radius: 20px;
     box-shadow: 1px 3px 6px 2px #899096;
 }
 
 .about > .profilephoto > .frame {
     position: absolute;
-    width: 300px;
-    height: 350px;
+    width: 85%;
+    height: 85%;
     border-radius: 20px;
     top: 30px;
     left: 30px;
@@ -250,7 +249,16 @@
     top: 250px;
 }
 
-.about > .content > button {
+.about > .content > .button-container {
+    position: absolute;
+    width: 382px;
+    height: 30px;
+    top: 370px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about > .content > .button-container > button {
     position: absolute;
     font-size: 15px;
     font-weight: 700;
@@ -258,12 +266,10 @@
     border-radius: 20px;
     width: 180px;
     height: 30px;
-    bottom: 0;
     border: 0;
-    top: 370px;
 }
 
-.about > .content > .btnHireMe {
+.about > .content > .button-container > .btnHireMe {
     background: #1C2520;
     color: #FFA500;
     box-shadow: 1px 3px 6px 2px #899096;
@@ -272,7 +278,7 @@
     transition: all 0.6s ease;
 }
 
-.about > .content > .btnHireMe:hover {
+.about > .content > .button-container > .btnHireMe:hover {
     transition: all 0.6s ease;
     background: #444965;
     color: #E4E5E8;
@@ -281,20 +287,20 @@
     transform: translate(0, -10px);
 }
 
-.about > .content > .btnHireMe:focus {
+.about > .content > .button-container > .btnHireMe:focus {
     outline: none !important;
 }
 
-.about > .content > .btnCV {
+.about > .content > .button-container > .btnCV {
     background: #FFA500;
     color: white;
     border: 0;
     box-shadow: 1px 3px 6px 2px #899096;
-    left: 200px;
+    right: 0;
     transition: all 0.6s ease;
 }
 
-.about > .content > .btnCV:hover {
+.about > .content > .button-container > .btnCV:hover {
     transition: all 0.6s ease;
     background: #477158;
     color: black;
@@ -303,24 +309,28 @@
     transform: translate(0, -10px);
 }
 
-.about > .content > .btnCV:focus {
+.about > .content > .button-container > .btnCV:focus {
     outline: none !important;
 }
 
 .about > .content > .socialmedia {
     position: absolute;
+    display: flex;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .about > .content > .socialmedia > .list {
     font-size: 30px;
     display: flex;
+    gap: 30px;
     justify-content: space-evenly;
 }
 
 .about > .content > .socialmedia > .list > li {
     list-style: none;
-    padding-left: 30px;
+    width: 30px;
 }
 
 .about > .content > .socialmedia > .list > li > a > .fab, .icon-freelancer, .icon-fiverr {
@@ -349,7 +359,7 @@
     color: #171515;
 }
 
-.svg-freelancer {
+.about > .content > .socialmedia > .list > li > a > .svg-freelancer {
     background-image: url("../asserts/icons/freelancer-blue.svg");
     position: absolute;
     background-size: cover;
@@ -361,7 +371,7 @@
     left: 250px;
 }
 
-.svg-freelancer:hover {
+.about > .content > .socialmedia > .list > li > a > .svg-freelancer:hover {
     background-image: url("../asserts/icons/freelancer-gray.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -372,7 +382,7 @@
     transform: translate(0, -10px);
 }
 
-.svg-fiverr {
+.about > .content > .socialmedia > .list > li > a > .svg-fiverr {
     background-image: url("../asserts/icons/fiverr-green.svg");
     position: absolute;
     background-size: contain;
@@ -384,7 +394,7 @@
     left: 305px;
 }
 
-.svg-fiverr:hover {
+.about > .content > .socialmedia > .list > li > a > .svg-fiverr:hover {
     background-image: url("../asserts/icons/fiverr-gray.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -1438,12 +1448,19 @@
     top: 80px;
 }
 
-.education > .content > div > .btn-more {
+.education > .content > div > a {
     position: absolute;
     right: 50px;
     bottom: 10px;
     width: 80px;
     height: 20px;
+    cursor: pointer;
+}
+
+.education > .content > div > a > .btn-more {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background: #FFA500;
     border-radius: 20px;
     border: none;
@@ -1452,7 +1469,7 @@
     transition: all 0.6s ease;
 }
 
-.education > .content > div > .btn-more:hover {
+.education > .content > div > a > .btn-more:hover {
     transition: all 0.6s ease;
     background: #1C2520;
     color: #E4E5E8;
@@ -1460,7 +1477,7 @@
     transform: translate(0, -10px);
 }
 
-.education > .content > div > .btn-more:focus {
+.education > .content > div > a > .btn-more:focus {
     outline: none !important;
 }
 
@@ -1602,17 +1619,17 @@
 }
 
 .projects > .java > .content > a > .project1 {
-    background: url("../asserts/projects/diyaulpatha.png") no-repeat center;
+    background: url("../asserts/projects/diyaulpatha.jpg") no-repeat center;
     background-size: cover;
 }
 
 .projects > .java > .content > a > .project2 {
-    background: url("../asserts/projects/pos-system(java).png") no-repeat center;
+    background: url("../asserts/projects/pos-system(java).jpg") no-repeat center;
     background-size: cover;
 }
 
 .projects > .java > .content > a > .project3 {
-    background: url("../asserts/projects/vehicleparking.png") no-repeat center;
+    background: url("../asserts/projects/vehicleparking.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -1904,12 +1921,13 @@
 .contact > .content > .content-2 > .socialmedia > .list {
     font-size: 25px;
     display: flex;
+    gap: 30px;
     justify-content: space-evenly;
 }
 
 .contact > .content > .content-2 > .socialmedia > .list > li {
     list-style: none;
-    padding-left: 30px;
+    width: 30px;
 }
 
 .contact > .content > .content-2 > .socialmedia > .list > li > a > .fab, .icon-freelancer, .icon-fiverr {
@@ -1938,7 +1956,7 @@
     color: #171515;
 }
 
-.svg-freelancer {
+.contact > .content > .content-2 > .socialmedia > .list > li > a > .svg-freelancer {
     background-image: url("../asserts/icons/freelancer-blue.svg");
     position: absolute;
     background-size: cover;
@@ -1951,7 +1969,7 @@
     transform: translateY(5px);
 }
 
-.svg-freelancer:hover {
+.contact > .content > .content-2 > .socialmedia > .list > li > a > .svg-freelancer:hover {
     background-image: url("../asserts/icons/freelancer-gray.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1962,7 +1980,7 @@
     transform: translate(0, -10px);
 }
 
-.svg-fiverr {
+.contact > .content > .content-2 > .socialmedia > .list > li > a > .svg-fiverr {
     background-image: url("../asserts/icons/fiverr-green.svg");
     position: absolute;
     background-size: contain;
@@ -1974,7 +1992,7 @@
     left: 305px;
 }
 
-.svg-fiverr:hover {
+.contact > .content > .content-2 > .socialmedia > .list > li > a > .svg-fiverr:hover {
     background-image: url("../asserts/icons/fiverr-gray.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -2144,7 +2162,7 @@ footer > h3 {
 }
 
 
-Media Queries
+/*Media Queries*/
 @media all and (max-width: 1475px) {
     .about > .content {
         left: 55%;
@@ -2330,7 +2348,10 @@ Media Queries
     }
     .headerBar > .menu-icon {
         display: flex;
+        width: 420px;
         font-size: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .service {
@@ -2420,6 +2441,27 @@ Media Queries
 @media all and (max-width: 862px) {
     .service > .content {
         left: 60%;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .headerBar {
+        height: 80px;
+    }
+    .headerBar > .logo {
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .headerBar > .menu-icon {
+        all: unset;
+        position: absolute;
+        display: flex;
+        width: 420px;
+        font-size: 20px;
+        left: 50%;
+        top: 50px;
+        transform: translateX(-50%);
     }
 }
 
@@ -2653,8 +2695,9 @@ Media Queries
         height: 980px;
     }
     .about > .content {
-        width: 100vw;
+        width: 370px;
         height: 380px;
+
     }
     .about > .content > .header1 {
         font-size: 26px;
@@ -2666,27 +2709,26 @@ Media Queries
     }
     .about > .content > p {
         font-size: 17px;
-        left: 10%;
     }
     .about > .content > :nth-child(4) {
         top: 210px;
     }
-    .about > .content > button {
+    .about > .content > .button-container {
+        top: 300px;
+    }
+    .about > .content > .button-container > button {
         font-size: 12px;
         width: 140px;
         height: 20px;
-        top: 300px;
     }
-    .about > .content > .btnHireMe {
+    .about > .content > .button-container > .btnHireMe {
         left: 10%;
     }
-    .about > .content > .btnCV {
+    .about > .content > .button-container > .btnCV {
         right: 10%;
     }
     .about > .content > .socialmedia {
         bottom: 0;
-        left: 40%;
-        transform: translateX(-50%);
     }
     .about > .content > .socialmedia > .list {
         font-size: 25px;
@@ -2794,13 +2836,19 @@ Media Queries
     }
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 458px) {
+    .headerBar {
+        height: 40px;
+    }
+    .headerBar > .logo {
+        left: 30px;
+    }
     .headerBar > .menu-icon {
         display: none;
     }
     .headerBar > .menu-btn {
         display: flex;
-        right: 50px;
+        right: 30px;
         top: 50%;
         transform: translateY(-50%);
         font-size: 24px;
@@ -2816,57 +2864,24 @@ Media Queries
         top: 50%;
         transform: translate(-50%, -50%);
     }
+}
 
-    /*.about {
-        height: 1080px;
-    }
-    .about > .title {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .about > .profilephoto{
-        left: 58%;
-        transform: translateX(-50%);
+@media all and (max-width: 425px) {
+    .about {
+        height: 1000px;
     }
     .about > .content {
-        width: 100vw;
-        height: 380px;
-    }
-    .about > .content > .header1 {
-        font-size: 26px;
-        left: 10%;
-    }
-    .about > .content > .header2 {
-        font-size: 18px;
-        left: 10%;
+        height: 410px;
     }
     .about > .content > p {
-        font-size: 17px;
-        left: 10%;
+        margin-left: 50px;
     }
     .about > .content > :nth-child(4) {
-        top: 210px;
+        padding-top: 10px;
     }
-    .about > .content > button {
-        font-size: 12px;
-        width: 140px;
-        height: 20px;
-        top: 300px;
+    .about > .content > .button-container {
+        top: 330px;
     }
-    .about > .content > .btnHireMe {
-        left: 10%;
-    }
-    .about > .content > .btnCV {
-        right: 10%;
-    }
-    .about > .content > .socialmedia {
-        bottom: 0;
-        left: 40%;
-        transform: translateX(-50%);
-    }
-    .about > .content > .socialmedia > .list {
-        font-size: 25px;
-    }*/
 
     /*.quotes > .thinking-image {
         width: 200px;
@@ -2958,6 +2973,317 @@ Media Queries
     }
     .service > .content > article > .read-more > a {
         font-size: 12px;
+    }
+}
+
+@media all and (max-width: 396px) {
+    .quotes {
+        height: 480px;
+    }
+    .quotes > .thinking-image {
+        width: 200px;
+        bottom: 0;
+    }
+    .quotes > .designer{
+        left: 260px;
+        top: 50px;
+        width: 110px;
+        height: 190px;
+    }
+    .quotes > .coder {
+        width: 110px;
+        height: 200px;
+        left: 260px;
+        top: 280px;
+    }
+    .quotes > .coder > .content {
+        top: 30px;
+    }
+    @keyframes quotes-designer {
+        0% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 260px;
+            top: 50px;
+            transform: translate(-50%, -25px);
+        }
+        50% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 260px;
+            top: 50px;
+            transform: translate(-50%, -25px);
+        }
+    }
+    @keyframes quotes-coder {
+        49.9% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 260px;
+            top: 280px;
+            transform: translate(-50%, -25px);
+        }
+        100% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 260px;
+            top: 280px;
+            transform: translate(-50%, -25px);
+        }
+    }
+}
+
+@media all and (max-width: 372px) {
+    .about > .content {
+        width: 100vw;
+    }
+}
+
+@media all and (max-width: 368px) {
+    .about {
+        height: 920px;
+    }
+    .about > .content {
+        top: 510px;
+    }
+    .about > .profilephoto {
+        width: 270px;
+        height: 330px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .about > .content > .socialmedia {
+        width: 150px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .about > .content > .socialmedia > .list {
+        animation: social-media-swipe 5s ease alternate infinite;
+    }
+    @keyframes social-media-swipe {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100px);
+        }
+    }
+}
+
+@media all and (max-width: 360px) {
+    .about > .content {
+        height: 420px;
+    }
+    .about > .content > .button-container {
+        top: 345px;
+    }
+}
+
+@media all and (max-width: 326px) {
+    .about {
+        height: 990px;
+    }
+    .about > .content {
+        height: 485px;
+    }
+    .about > .content > .header1 {
+        text-align: center;
+        width: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .about > .content > .header2 {
+        text-align: center;
+        width: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100px;
+    }
+    .about > .content > p {
+        transform: translateY(70px);
+    }
+    .about > .content > .button-container {
+        top: 410px;
+        width: 230px;
+    }
+    .about > .content > .button-container > button {
+        width: 80px;
+    }
+}
+
+@media all and (max-width: 318px) {
+    .quotes {
+        height: 540px;
+    }
+    .quotes > .thinking-image {
+        width: 180px;
+        bottom: 0;
+    }
+    .quotes > .designer{
+        all: unset;
+        position: absolute;
+        left: 10%;
+        top: 50px;
+        width: 110px;
+        height: 190px;
+        font-size: 13px;
+        font-family: 'Ubuntu', sans-serif;
+        animation: quotes-designer 2s infinite alternate;
+    }
+    .quotes > .designer > .author {
+        font-size: 12px;
+    }
+    .quotes > .coder {
+        all: unset;
+        position: absolute;
+        right: 10%;
+        top: 50px;
+        width: 110px;
+        height: 190px;
+        font-size: 13px;
+        font-family: 'Ubuntu', sans-serif;
+        animation: quotes-coder 2s infinite alternate;
+    }
+    .quotes > .coder > .author {
+        font-size: 12px;
+    }
+    @keyframes quotes-designer {
+        0% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 10%;
+            top: 50px;
+            transform: translate(0, -25px);
+        }
+        50% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 10%;
+            top: 50px;
+            transform: translate(0, -25px);
+        }
+    }
+    @keyframes quotes-coder {
+        49.9% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            right: 10%;
+            top: 50px;
+            transform: translate(0, -25px);
+        }
+        100% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            right: 10%;
+            top: 50px;
+            transform: translate(0, -25px);
+        }
+    }
+}
+
+@media all and (max-width: 298px) {
+    .about > .profilephoto {
+        width: 230px;
+        height: 290px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .quotes {
+        height: 760px;
+    }
+    .quotes > .thinking-image {
+        width: 180px;
+        bottom: 0;
+    }
+    .quotes > .designer{
+        all: unset;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+        width: 150px;
+        height: 190px;
+        font-size: 13px;
+        font-family: 'Ubuntu', sans-serif;
+        animation: quotes-designer 2s infinite alternate;
+    }
+    .quotes > .designer > .author {
+        font-size: 12px;
+    }
+    .quotes > .coder {
+        all: unset;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 270px;
+        width: 150px;
+        height: 190px;
+        font-size: 13px;
+        font-family: 'Ubuntu', sans-serif;
+        animation: quotes-coder 2s infinite alternate;
+    }
+    .quotes > .coder > .author {
+        font-size: 12px;
+    }
+    @keyframes quotes-designer {
+        0% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 50%;
+            top: 50px;
+            transform: translate(-50%, -25px);
+        }
+        50% {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 50%;
+            top: 50px;
+            transform: translate(-50%, -25px);
+        }
+    }
+    @keyframes quotes-coder {
+        49.9% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 50%;
+            top: 270px;
+            transform: translate(-50%, -25px);
+        }
+        100% {
+            background: #FFA500;
+            border-radius: 20px;
+            box-shadow: 1px 5px 14px 4px #928c8c;
+            left: 50%;
+            top: 270px;
+            transform: translate(-50%, -25px);
+        }
+    }
+}
+
+@media all and (max-width: 250px) {
+    .about > .profilephoto {
+        width: 200px;
+        height: 260px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .about > .profilephoto > .image {
+        width: 100%;
+        height: 100%;
+    }
+    .about > .profilephoto > .frame {
+        display: none;
     }
 }
 

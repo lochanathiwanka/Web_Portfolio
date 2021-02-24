@@ -43,7 +43,6 @@
     <section class="home" id="home">
         <section class="blend"></section>
         <div class="text">i'm <span class="typing">Lochana Thiwanka</span></div>
-        <script src="script/typed.js"></script>
         <script>
             var typed = new Typed('.typing', {
                 strings: ["Lochana Thiwanka.", "a Developer.", "a Designer.", "a Freelancer."],
@@ -62,15 +61,17 @@
         <article class="content">
             <h3 class="header1">i'm Lochana Thiwanka</h3>
             <h3 class="header2">From Panadura, Sri Lanka</h3>
-            <p>I'm a Fullstack Java Developer & Web Designer<br>
+            <p id="about-para1">I'm a Fullstack Java Developer & Web Designer<br>
                 from Panadura, Sri lanka who is 20 years old.<br>
                 Also i'm a Musician & Music Producer since<br>
                 2016.</p>
-            <p>I'm also currently working on Fiver & FreeLancer<br>
+            <p id="about-para2">I'm also currently working on Fiver & FreeLancer<br>
                 as a part time worker and always lookout for<br>
                 expecting new projects to work on.</p>
-            <button class="btnHireMe">HIRE ME</button>
-            <button class="btnCV">DOWNLOAD RESUME</button>
+            <div class="button-container">
+                <button id="btnHireMe" class="btnHireMe">HIRE ME</button>
+                <button id="btnCV" class="btnCV">DOWNLOAD RESUME</button>
+            </div>
             <nav class="socialmedia">
                 <ul class="list">
                     <li class="facebook">
@@ -117,7 +118,7 @@
                 User Experience” or… SUX?”</p>
             <h3 class="author">— Billy Gregory</h3>
         </article>
-        <img alt="thinking-image" class="thinking-image" src="asserts/thinking-image-2.png">
+        <img alt="thinking-image" class="thinking-image" src="asserts/thinking-image.png">
         <article class="coder">
             <h2 class="title">coder</h2>
             <p class="content">
@@ -280,14 +281,18 @@
                 <h3 class="sub-title">INSTITUTE OF SOFTWARE ENGINEERING</h3>
                 <h3 class="education-type">GRADUATE DEPLOMA IN SOFTWARE ENGINEERING</h3>
                 <h3 class="year">2020 - 2022</h3>
-                <button class="btn-more">MORE</button>
+                <a href="https://www.ijse.lk/" target="_blank">
+                    <button class="btn-more">MORE</button>
+                </a>
             </div>
             <div class="ssbc">
                 <div class="logo" ></div>
                 <h3 class="sub-title">SRI SUMANGALA COLLEGE,PANADURA</h3>
                 <h3 class="education-type">PRIMARY & HIGHER EDUCATION</h3>
                 <h3 class="year">2006 - 2019</h3>
-                <button class="btn-more">MORE</button>
+                <a href="https://www.facebook.com/SriSumangalaCollegePanadura/" target="_blank">
+                    <button class="btn-more">MORE</button>
+                </a>
             </div>
         </article>
     </section>
