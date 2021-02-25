@@ -13,10 +13,11 @@
     width: 100vw;
     height: 50px;
     transition: all 0.3s ease;
+    background: #373d41;
 }
 
 .headerBar.sticky {
-    padding: 5px 5px;
+    padding: 2px 0;
     background: #b8b8b5;
     transition: all 0.3s ease;
 }
@@ -712,6 +713,7 @@
     top: 45px;
     background: white;
     border-radius: 20px;
+    border: none;
     box-shadow: 11px 7px 8px 1px #bfb7b7;
     overflow: hidden;
     cursor: pointer;
@@ -1203,15 +1205,6 @@
     border-radius: 30px;
 }
 
-/*.portfolio > .guitar-photo {
-    position: absolute;
-    width: 400px;
-    height: 500px;
-    background: url("../asserts/portfolio/guitar.png") no-repeat center;
-    background-size: contain;
-    top: 150px;
-}*/
-
 .portfolio > .frame {
     position: absolute;
     display: grid;
@@ -1422,9 +1415,8 @@
     height: 50px;
     background: url("../asserts/logo/ssbc.png") no-repeat center;
     background-size: cover;
-    left: 5%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 10px;
+    top: 30px;
 }
 
 .education > .content > div > .sub-title, .education-type, .year {
@@ -2348,8 +2340,8 @@ footer > h3 {
     }
     .headerBar > .menu-icon {
         display: flex;
-        width: 420px;
-        font-size: 20px;
+        width: 550px;
+        font-size: 16px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -2457,11 +2449,60 @@ footer > h3 {
         all: unset;
         position: absolute;
         display: flex;
-        width: 420px;
-        font-size: 20px;
+        width: 550px;
+        font-size: 16px;
         left: 50%;
         top: 50px;
         transform: translateX(-50%);
+    }
+
+    .portfolio {
+        height: 950px;
+    }
+    .portfolio > .frame {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        width: 600px;
+        height: 750px;
+    }
+    .portfolio > .frame > .photo-4 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background: #1dbf73;
+    }
+    .portfolio > .frame > .photo-5 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        background: #FFA500;
+    }
+    .portfolio > .frame > .photo-6 {
+        grid-column: 1/5;
+        grid-row: 4/5;
+        background: #e74c3c;
+    }
+}
+
+@media all and (max-width: 814px) {
+    .skills {
+        height: 1180px;
+    }
+    .skills > .content {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 780px) {
+    .education {
+        height: 550px;
+    }
+    .education > .content > div {
+        width: 600px;
+        height: 150px;
+    }
+    .education > .content > div > .year {
+        top: 115px;
     }
 }
 
@@ -2526,6 +2567,27 @@ footer > h3 {
         transform: translate(-50%, -50%);
         width: 560px;
     }
+
+    .skills > .title {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .portfolio > .title {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .education > .title {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .projects > .title {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contact > .title {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media all and (max-width: 678px) {
@@ -2551,6 +2613,80 @@ footer > h3 {
     }
     .quotes > .coder > .content {
         top: 70px;
+    }
+}
+
+@media all and (max-width: 642px) {
+    .headerBar > .menu-icon {
+        width: 515px;
+    }
+    .headerBar > .menu-icon > li {
+        padding-right: 55px;
+    }
+
+    .portfolio {
+        height: 1150px;
+    }
+    .portfolio > .frame {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+        grid-column-gap: 15px;
+        width: 400px;
+        height: 950px;
+        left: 50%;
+        top: 57%;
+        transform: translate(-50%, -50%);
+    }
+    .portfolio > .frame > .photo-1 {
+        width: 364px;
+        left: 53%;
+        transform: translateX(-50%);
+    }
+    .portfolio > .frame > .photo-2 {
+        width: 182px;
+        height: 182px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .portfolio > .frame > .photo-3 {
+        width: 182px;
+        height: 182px;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        transform: translateX(18px);
+    }
+    .portfolio > .frame > .photo-4 {
+        width: 182px;
+        height: 182px;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .portfolio > .frame > .photo-5 {
+        width: 182px;
+        height: 182px;
+        grid-column: 2/3;
+        grid-row: 4/5;
+        transform: translateX(18px);
+    }
+    .portfolio > .frame > .photo-6 {
+        width: 400px;
+        height: 182px;
+        grid-column: 1/5;
+        grid-row: 5/6;
+    }
+    .portfolio > .frame > .photo-1:hover {
+        left: 53%;
+        transform: translate(-50%, 15px);
+        transition: all 0.4s ease-out;
+    }
+    .portfolio > .frame > .photo-3:hover {
+        transform: translate(18px, 15px);
+        transition: all 0.4s ease-out;
+    }
+    .portfolio > .frame > .photo-5:hover {
+        transform: translate(18px, 15px);
+        transition: all 0.4s ease-out;
     }
 }
 
@@ -2604,6 +2740,10 @@ footer > h3 {
             top: 350px;
             transform: translate(-50%, -25px);
         }
+    }
+
+    .education > .content > div {
+        width: 500px;
     }
 }
 
@@ -2698,6 +2838,13 @@ footer > h3 {
 }
 
 @media all and (max-width: 545px) {
+    .headerBar > .menu-icon {
+        width: 480px;
+    }
+    .headerBar > .menu-icon > li {
+        padding-right: 50px;
+    }
+
     .quotes > .thinking-image {
         left: 22px;
         width: 240px;
@@ -2747,9 +2894,69 @@ footer > h3 {
             transform: translate(-50%, -25px);
         }
     }
+
+    .skills {
+        height: 2080px;
+    }
+    .skills > .content {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media all and (max-width: 525px) {
+    .education > .content > div {
+        width: 430px;
+    }
+    .education > .content > div > .sub-title {
+        font-size: 14px;
+    }
+    .education > .content > div > .education-type {
+        font-size: 20px;
+    }
+    .education > .content > div > .year {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 510px) {
+    .headerBar > .menu-icon {
+        width: 445px;
+    }
+    .headerBar > .menu-icon > li {
+        padding-right: 45px;
+    }
 }
 
 @media all and (max-width: 475px) {
+    .headerBar {
+        height: 40px;
+    }
+    .headerBar > .logo {
+        left: 30px;
+    }
+    .headerBar > .menu-icon {
+        display: none;
+    }
+    .headerBar > .menu-btn {
+        display: flex;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+    }
+
+    .home {
+        background: url("../asserts/background-mobile.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .home > .text {
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .about {
         height: 980px;
     }
@@ -2933,33 +3140,26 @@ footer > h3 {
     }
 }
 
-@media all and (max-width: 458px) {
-    .headerBar {
-        height: 40px;
+@media all and (max-width: 446px) {
+    .education {
+        height: 730px;
     }
-    .headerBar > .logo {
+    .education > .content > div {
+        width: 300px;
+        height: 230px;
+    }
+    .education > .content > div > .sub-title {
+        font-size: 14px;
+    }
+    .education > .content > div > .education-type {
+        font-size: 20px;
+        top: 100px;
         left: 30px;
     }
-    .headerBar > .menu-icon {
-        display: none;
-    }
-    .headerBar > .menu-btn {
-        display: flex;
-        right: 30px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 24px;
-    }
-    .home {
-        background: url("../asserts/background-mobile.jpg") no-repeat center;
-        background-size: cover;
-    }
-    .home > .text {
-        text-align: center;
-        /*left: 200px;*/
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+    .education > .content > div > .year {
+        font-size: 14px;
+        top: 170px;
+        left: 30px;
     }
 }
 
@@ -2978,6 +3178,71 @@ footer > h3 {
     }
     .about > .content > .button-container {
         top: 330px;
+    }
+
+    .portfolio {
+        height: 1050px;
+    }
+    .portfolio > .frame {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+        grid-column-gap: 15px;
+        width: 340px;
+        height: 850px;
+        left: 50%;
+        top: 57%;
+        transform: translate(-50%, -50%);
+    }
+    .portfolio > .frame > .photo-1 {
+        width: 320px;
+        left: 51%;
+        transform: translateX(-50%);
+    }
+    .portfolio > .frame > .photo-2 {
+        width: 160px;
+        height: 160px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .portfolio > .frame > .photo-3 {
+        width: 160px;
+        height: 160px;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        transform: translateX(3px);
+    }
+    .portfolio > .frame > .photo-4 {
+        width: 160px;
+        height: 160px;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .portfolio > .frame > .photo-5 {
+        width: 160px;
+        height: 160px;
+        grid-column: 2/3;
+        grid-row: 4/5;
+        transform: translateX(3px);
+    }
+    .portfolio > .frame > .photo-6 {
+        width: 340px;
+        height: 160px;
+        grid-column: 1/5;
+        grid-row: 5/6;
+    }
+    .portfolio > .frame > .photo-1:hover {
+        left: 51%;
+        transform: translate(-50%, 15px);
+        transition: all 0.4s ease-out;
+    }
+    .portfolio > .frame > .photo-3:hover {
+        transform: translate(3px, 15px);
+        transition: all 0.4s ease-out;
+    }
+    .portfolio > .frame > .photo-5:hover {
+        transform: translate(3px, 15px);
+        transition: all 0.4s ease-out;
     }
 }
 
@@ -3400,13 +3665,3 @@ footer > h3 {
         display: none;
     }
 }
-
-
-/*@media all and (max-width: 425px) {
-    .about {
-        height: 1000px;
-    }
-    .service {
-        height: 1080px;
-    }
-}*/
