@@ -1531,7 +1531,7 @@ main {
     background: url("../asserts/projects/star.png") no-repeat center;
     background-size: cover;
     animation: swing-star 1s ease-in-out alternate infinite;
-    transform-origin:center -20px;
+    transform-origin: center -20px;
 }
 
 .projects > .swing_moon {
@@ -1539,8 +1539,8 @@ main {
     height: 600px;
     background: url("../asserts/projects/moon.png") no-repeat center;
     background-size: cover;
-    animation:swing-moon 1s ease-in-out alternate infinite;
-    transform-origin:center -20px;
+    animation: swing-moon 1s ease-in-out alternate infinite;
+    transform-origin: center -20px;
 }
 
 .projects > section {
@@ -1700,7 +1700,7 @@ main {
     transition: all 0.6s ease;
 }
 
-.projects  a > .more {
+.projects a > .more {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -2138,12 +2138,12 @@ footer > h3 {
 
 @keyframes swing-star {
     0% {
-        transform:rotate(6deg);
+        transform: rotate(6deg);
         top: 118px;
         left: 80px;
     }
     to {
-        transform:rotate(-6deg);
+        transform: rotate(-6deg);
         top: 118px;
         left: 80px;
     }
@@ -2152,11 +2152,11 @@ footer > h3 {
 @keyframes swing-moon {
     0% {
         right: 50px;
-        transform:rotate(-3deg)
+        transform: rotate(-3deg)
     }
     to {
         right: 50px;
-        transform:rotate(3deg)
+        transform: rotate(3deg)
     }
 }
 
@@ -2172,9 +2172,11 @@ footer > h3 {
     .quotes > .designer {
         left: 25%;
     }
+
     .quotes > .coder {
         left: 75%;
     }
+
     @keyframes quotes-designer {
         0% {
             background: white;
@@ -2219,8 +2221,6 @@ footer > h3 {
     .about > .profilephoto {
         left: 20%;
     }
-    .about > .content
-
     .projects > .swing_moon {
         all: unset;
     }
@@ -2242,15 +2242,19 @@ footer > h3 {
         grid-row-gap: 70px;
         left: 565px;
     }
+
     .service > .content > .app-development::after {
         left: 130px;
     }
+
     .service > .content > .web-design::after {
         left: 450px;
     }
+
     .service > .content > .graphic-design::after {
         left: 130px;
     }
+
     .service > .content > .innovative-ideas::after {
         left: 450px;
     }
@@ -2266,12 +2270,15 @@ footer > h3 {
     .home > .text {
         left: 600px;
     }
+
     .quotes > .designer {
         left: 20%;
     }
+
     .quotes > .coder {
         left: 80%;
     }
+
     @keyframes quotes-designer {
         0% {
             background: white;
@@ -2310,10 +2317,12 @@ footer > h3 {
     .about {
         height: 1080px;
     }
+
     .about > .profilephoto {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .about > .content {
         top: 600px;
         left: 50%;
@@ -2327,18 +2336,23 @@ footer > h3 {
         grid-row-gap: 70px;
         left: 530px;
     }
+
     .service > .content > article {
         width: 280px;
     }
+
     .service > .content > .app-development::after {
         left: 120px;
     }
+
     .service > .content > .web-design::after {
         left: 400px;
     }
+
     .service > .content > .graphic-design::after {
         left: 120px;
     }
+
     .service > .content > .innovative-ideas::after {
         left: 400px;
     }
@@ -2346,9 +2360,11 @@ footer > h3 {
     .contact {
         height: 1850px;
     }
+
     .contact > .content {
         top: 54%;
     }
+
     .contact > .content > .content-1 {
         position: relative;
         height: 200px;
@@ -2356,12 +2372,14 @@ footer > h3 {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-1 > .sub-title {
         position: absolute;
         width: max-content;
         left: 50%;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-1 > .sub-content {
         position: absolute;
         font-weight: 100;
@@ -2371,9 +2389,11 @@ footer > h3 {
         transform: translateX(-50%);
         bottom: 0;
     }
+
     .contact > .content > .content-1 > .sub-content > .paragraph-1 {
         padding-bottom: 20px;
     }
+
     .contact > .content > .content-2 {
         position: relative;
         height: 800px;
@@ -2381,56 +2401,67 @@ footer > h3 {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-2 > .phone {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-2 > .location {
         left: 50%;
         top: 130px;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-2 > div {
         top: 230px;
         left: 50%;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-2 > .email {
         left: 50%;
         top: 560px;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-2 > .sub-title {
         left: 50%;
         top: 680px;
         width: max-content;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-2 > .paragraph {
         left: 50%;
         top: 720px;
         width: 300px;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-2 > .socialmedia {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-3 {
         left: 50%;
         transform: translateX(-50%);
         width: 330px;
     }
+
     .contact > .content > .content-3 > .title {
         left: 50%;
         width: max-content;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-3 > .content {
         width: 100%;
         left: 50%;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-3 > .say-hello {
         left: 50%;
         transform: translateX(-50%);
@@ -2441,9 +2472,11 @@ footer > h3 {
     .headerBar > .logo {
         top: 15%;
     }
+
     .headerBar > .menu {
         display: none;
     }
+
     .headerBar > .menu-icon {
         display: flex;
         width: 550px;
@@ -2455,6 +2488,7 @@ footer > h3 {
     .service {
         height: 1100px;
     }
+
     .service > .content {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr);
@@ -2463,13 +2497,16 @@ footer > h3 {
         top: 55%;
         transform: translate(-50%, -50%);*/
     }
+
     .service > .content > .web-design::after, .graphic-design::after {
         display: none;
     }
+
     .service > .content > .app-development::after {
         left: 155px;
         top: 120px;
     }
+
     .service > .content > .web-development::after {
         position: absolute;
         content: " ";
@@ -2481,7 +2518,8 @@ footer > h3 {
         border-radius: 30px;
         transform: rotate(270deg);
     }
-    .service > .content > .innovative-ideas::after{
+
+    .service > .content > .innovative-ideas::after {
         left: 155px;
         top: 760px;
     }
@@ -2493,13 +2531,16 @@ footer > h3 {
         top: 40px;
         left: 100px;
     }
+
     .quotes > .designer {
         left: 600px;
     }
+
     .quotes > .coder {
         left: 600px;
         top: 350px;
     }
+
     @keyframes quotes-designer {
         0% {
             background: white;
@@ -2538,19 +2579,57 @@ footer > h3 {
 
 @media all and (max-width: 894px) {
     .projects > section {
-        width: 472px;
-        overflow-x: auto;
+        width: 400px;
+        overflow-x: hidden;
         overflow-y: hidden;
     }
     .projects > section > .content {
-        animation: projects-swipe 5s ease alternate infinite;
+        width: 1200px;
+        gap: 0;
+        animation: projects-swipe 20s ease-in-out infinite;
+    }
+    .projects > section > .content > a {
+        width: 400px;
+    }
+    .projects > section > .content > a:hover {
+        width: 400px;
+        height: 230px;
+        transform: translateY(0);
+    }
+    .projects > section > .content > a::before {
+        all: unset;
+    }
+    .projects > section > .content > a:hover::before {
+        all: unset;
+    }
+    .projects > section > .content > a:hover > article > .title {
+        font-size: 16px;
+        top: -40px;
+        left: 0;
+        width: initial;
+        transform: translateY(0);
+    }
+    .projects > section > .content > a:hover > article > .description {
+        bottom: -20px;
     }
     @keyframes projects-swipe {
-        from {
-            transform: translateX(20px);
+        0% {
+            transform: translateX(0);
         }
-        to {
-            transform: translateX(-300px);
+        20% {
+            transform: translateX(-400px);
+        }
+        40% {
+            transform: translateX(-400px);
+        }
+        50% {
+            transform: translateX(-800px);
+        }
+        70% {
+            transform: translateX(-800px);
+        }
+        80% {
+            transform: translateX(0);
         }
     }
 }
@@ -2565,11 +2644,13 @@ footer > h3 {
     .headerBar {
         height: 80px;
     }
+
     .headerBar > .logo {
         top: 5px;
         left: 50%;
         transform: translateX(-50%);
     }
+
     .headerBar > .menu-icon {
         all: unset;
         position: absolute;
@@ -2584,6 +2665,7 @@ footer > h3 {
     .portfolio {
         height: 950px;
     }
+
     .portfolio > .frame {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(3, 1fr);
@@ -2591,16 +2673,19 @@ footer > h3 {
         width: 600px;
         height: 750px;
     }
+
     .portfolio > .frame > .photo-4 {
         grid-column: 1/2;
         grid-row: 3/4;
         background: #1dbf73;
     }
+
     .portfolio > .frame > .photo-5 {
         grid-column: 2/3;
         grid-row: 3/4;
         background: #FFA500;
     }
+
     .portfolio > .frame > .photo-6 {
         grid-column: 1/5;
         grid-row: 4/5;
@@ -2612,6 +2697,7 @@ footer > h3 {
     .skills {
         height: 1180px;
     }
+
     .skills > .content {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr);
@@ -2622,10 +2708,12 @@ footer > h3 {
     .education {
         height: 550px;
     }
+
     .education > .content > div {
         width: 600px;
         height: 150px;
     }
+
     .education > .content > div > .year {
         top: 115px;
     }
@@ -2720,7 +2808,6 @@ footer > h3 {
         background: none;
         transition: all 0.6s ease;
     }
-
     .skills > .title {
         left: 50%;
         transform: translateX(-50%);
@@ -2749,45 +2836,10 @@ footer > h3 {
         transform: translate(0, 0);
         box-shadow: 1px 3px 6px 2px #899096;
     }
+
     .projects > .title {
         left: 50%;
         transform: translateX(-50%);
-    }
-    .projects > section > .content > a:hover {
-        width: 200px;
-        height: 230px;
-        transform: translateY(0);
-    }
-    .projects > section > .content > a::before {
-        all: unset;
-    }
-    .projects > section > .content > a:hover::before {
-        all: unset;
-    }
-    .projects > section > .content > a:hover > article > .title {
-        all: unset;
-        z-index: 5;
-        position: absolute;
-        top: -40px;
-        font-size: 16px;
-        font-weight: 700;
-        transition: all 0.6s ease;
-        color: white;
-    }
-    .projects > section > .content > a > article > .description {
-        all: unset;
-        z-index: 5;
-        position: absolute;
-        font-size: 12px;
-        bottom: 20px;
-        right: 3px;
-        opacity: 1;
-        color: white;
-    }
-    .projects > section > .content > a:hover > article > .description {
-        bottom: 20px;
-        opacity: 1;
-        transition: all 0.8s ease;
     }
     .projects > a > .more:hover {
         background: #FFA500;
@@ -2804,26 +2856,31 @@ footer > h3 {
 }
 
 @media all and (max-width: 678px) {
-    .quotes > .designer{
+    .quotes > .designer {
         width: 220px;
         height: 210px;
         font-size: 16px;
     }
+
     .quotes > .coder {
         width: 220px;
         height: 210px;
         font-size: 16px;
     }
+
     .quotes > .designer > .author {
         font-size: 13px;
     }
+
     .quotes > .coder > .author {
         font-size: 13px;
     }
+
     .quotes > .designer > .content {
         top: 70px;
         left: 0;
     }
+
     .quotes > .coder > .content {
         top: 70px;
     }
@@ -2833,6 +2890,7 @@ footer > h3 {
     .headerBar > .menu-icon {
         width: 515px;
     }
+
     .headerBar > .menu-icon > li {
         padding-right: 55px;
     }
@@ -2840,6 +2898,7 @@ footer > h3 {
     .portfolio {
         height: 1150px;
     }
+
     .portfolio > .frame {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(2, 1fr);
@@ -2851,17 +2910,20 @@ footer > h3 {
         top: 57%;
         transform: translate(-50%, -50%);
     }
+
     .portfolio > .frame > .photo-1 {
         width: 364px;
         left: 53%;
         transform: translateX(-50%);
     }
+
     .portfolio > .frame > .photo-2 {
         width: 182px;
         height: 182px;
         grid-column: 1/2;
         grid-row: 3/4;
     }
+
     .portfolio > .frame > .photo-3 {
         width: 182px;
         height: 182px;
@@ -2869,12 +2931,14 @@ footer > h3 {
         grid-row: 3/4;
         transform: translateX(18px);
     }
+
     .portfolio > .frame > .photo-4 {
         width: 182px;
         height: 182px;
         grid-column: 1/2;
         grid-row: 4/5;
     }
+
     .portfolio > .frame > .photo-5 {
         width: 182px;
         height: 182px;
@@ -2882,21 +2946,25 @@ footer > h3 {
         grid-row: 4/5;
         transform: translateX(18px);
     }
+
     .portfolio > .frame > .photo-6 {
         width: 400px;
         height: 182px;
         grid-column: 1/5;
         grid-row: 5/6;
     }
+
     .portfolio > .frame > .photo-1:hover {
         left: 53%;
         transform: translate(-50%, 15px);
         transition: all 0.4s ease-out;
     }
+
     .portfolio > .frame > .photo-3:hover {
         transform: translate(18px, 15px);
         transition: all 0.4s ease-out;
     }
+
     .portfolio > .frame > .photo-5:hover {
         transform: translate(18px, 15px);
         transition: all 0.4s ease-out;
@@ -2908,18 +2976,22 @@ footer > h3 {
         width: 200px;
         left: 430px;
     }
+
     .quotes > .coder {
         width: 200px;
         left: 430px;
         top: 350px;
     }
+
     .quotes > .designer > .content {
         top: 50px;
         left: 0;
     }
+
     .quotes > .coder > .content {
         top: 35px;
     }
+
     @keyframes quotes-designer {
         0% {
             background: white;
@@ -2964,53 +3036,67 @@ footer > h3 {
     .service {
         height: 1000px;
     }
+
     .service > .content {
         grid-row-gap: 50px;
         width: 536px;
     }
+
     .service > .content > article {
         width: 232px;
     }
+
     .service > .content > .app-development > .icon {
         width: 40px;
         height: 40px;
     }
+
     .service > .content > .web-design > .icon {
         width: 40px;
         height: 40px;
     }
+
     .service > .content > .web-development > .icon {
         width: 40px;
         height: 40px;
     }
+
     .service > .content > .graphic-design > .icon {
         width: 40px;
         height: 40px;
     }
+
     .service > .content > .innovative-ideas > .icon {
         width: 40px;
         height: 40px;
     }
+
     .service > .content > .e-commerce > .icon {
         width: 40px;
         height: 40px;
     }
+
     .service > .content > article > .sub-title {
         font-size: 21px;
     }
+
     .service > .content > article > .sub-content {
         font-size: 18px;
     }
+
     .service > .content > article > .read-more > a {
         font-size: 13px;
     }
+
     .service > .content > .app-development::after {
         width: 230px;
     }
+
     .service > .content > .web-development::after {
         width: 230px;
         top: 410px;
     }
+
     .service > .content > .innovative-ideas::after {
         width: 230px;
         top: 700px;
@@ -3022,27 +3108,34 @@ footer > h3 {
         grid-column-gap: 30px;
         width: 445px;
     }
+
     .service > .content > article {
         width: 205px;
     }
+
     .service > .content > article > .sub-title {
         font-size: 19px;
     }
+
     .service > .content > article > .sub-content {
         font-size: 16px;
     }
+
     .service > .content > article > .read-more > a {
         font-size: 11px;
     }
+
     .service > .content > .app-development::after {
         width: 220px;
         left: 110px;
     }
+
     .service > .content > .web-development::after {
         width: 220px;
         top: 405px;
         left: 110px;
     }
+
     .service > .content > .innovative-ideas::after {
         width: 220px;
         top: 690px;
@@ -3057,7 +3150,6 @@ footer > h3 {
     .headerBar > .menu-icon > li {
         padding-right: 50px;
     }
-
     .quotes > .thinking-image {
         left: 22px;
         width: 240px;
@@ -3118,18 +3210,34 @@ footer > h3 {
 
     .projects > section {
         width: 250px;
-        overflow-x: auto;
-        overflow-y: hidden;
     }
     .projects > section > .content {
-        animation: projects-swipe 5s ease alternate infinite;
+        width: 750px;
+    }
+    .projects > section > .content > a {
+        width: 250px;
+    }
+    .projects > section > .content > a:hover {
+        width: 250px;
     }
     @keyframes projects-swipe {
-        from {
-            transform: translateX(20px);
+        0% {
+            transform: translateX(0);
         }
-        to {
-            transform: translateX(-545px);
+        20% {
+            transform: translateX(-250px);
+        }
+        40% {
+            transform: translateX(-250px);
+        }
+        50% {
+            transform: translateX(-500px);
+        }
+        70% {
+            transform: translateX(-500px);
+        }
+        80% {
+            transform: translateX(0);
         }
     }
 }
@@ -3138,12 +3246,15 @@ footer > h3 {
     .education > .content > div {
         width: 430px;
     }
+
     .education > .content > div > .sub-title {
         font-size: 14px;
     }
+
     .education > .content > div > .education-type {
         font-size: 20px;
     }
+
     .education > .content > div > .year {
         font-size: 14px;
     }
@@ -3153,6 +3264,7 @@ footer > h3 {
     .headerBar > .menu-icon {
         width: 445px;
     }
+
     .headerBar > .menu-icon > li {
         padding-right: 45px;
     }
@@ -3162,12 +3274,15 @@ footer > h3 {
     .headerBar {
         height: 40px;
     }
+
     .headerBar > .logo {
         left: 30px;
     }
+
     .headerBar > .menu-icon {
         display: none;
     }
+
     .headerBar > .menu-btn {
         display: flex;
         right: 15px;
@@ -3180,6 +3295,7 @@ footer > h3 {
         background: url("../asserts/background-mobile.jpg") no-repeat center;
         background-size: cover;
     }
+
     .home > .text {
         text-align: center;
         left: 50%;
@@ -3190,68 +3306,85 @@ footer > h3 {
     .about {
         height: 980px;
     }
+
     .about > .content {
         width: 370px;
         height: 380px;
 
     }
+
     .about > .content > .header1 {
         font-size: 26px;
         left: 10%;
     }
+
     .about > .content > .header2 {
         font-size: 18px;
         left: 10%;
     }
+
     .about > .content > p {
         font-size: 17px;
     }
+
     .about > .content > :nth-child(4) {
         top: 210px;
     }
+
     .about > .content > .button-container {
         top: 300px;
     }
+
     .about > .content > .button-container > a {
         width: 140px;
         height: 20px;
     }
+
     .about > .content > .button-container > a > button {
         font-size: 12px;
     }
+
     .about > .content > .button-container > a:nth-child(1) {
         left: 10%;
     }
+
     .about > .content > .button-container > a:nth-child(2) {
         right: 10%;
     }
+
     .about > .content > .socialmedia {
         bottom: 0;
     }
+
     .about > .content > .socialmedia > .list {
         font-size: 25px;
     }
 
-    .quotes > .designer{
+    .quotes > .designer {
         width: 170px;
         height: 210px;
         font-size: 15px;
     }
+
     .quotes > .coder {
         width: 170px;
         height: 210px;
         font-size: 15px;
     }
+
     .quotes > .designer > .author {
         font-size: 13px;
     }
+
     .quotes > .coder > .author {
         font-size: 13px;
     }
+
     .quotes > .designer > .content {
         top: 45px;
         left: 0;
     }
+
     .quotes > .coder > .content {
         top: 45px;
     }
@@ -3263,19 +3396,22 @@ footer > h3 {
         padding: 0;
         height: 450px;
     }
+
     .quotes > .thinking-image {
         all: initial;
         position: absolute;
         width: 210px;
         bottom: 0;
     }
-    .quotes > .designer{
+
+    .quotes > .designer {
         left: 310px;
         top: 40px;
         width: 150px;
         height: 180px;
         font-size: 13px;
     }
+
     .quotes > .coder {
         width: 150px;
         height: 180px;
@@ -3283,19 +3419,24 @@ footer > h3 {
         left: 310px;
         top: 250px;
     }
+
     .quotes > .designer > .author {
         font-size: 12px;
     }
+
     .quotes > .coder > .author {
         font-size: 12px;
     }
+
     .quotes > .designer > .content {
         top: 45px;
         left: 0;
     }
+
     .quotes > .coder > .content {
         top: 45px;
     }
+
     @keyframes quotes-designer {
         0% {
             background: white;
@@ -3336,6 +3477,7 @@ footer > h3 {
     .service {
         height: 960px;
     }
+
     .service > .content {
         grid-column-gap: 30px;
         grid-row-gap: 50px;
@@ -3344,29 +3486,36 @@ footer > h3 {
         top: 56%;
         transform: translate(-50%, -50%);
     }
-    .service > .content > .app-development::after{
+
+    .service > .content > .app-development::after {
         left: 70px;
     }
-    .service > .content > .web-development::after{
+
+    .service > .content > .web-development::after {
         left: 70px;
     }
-    .service > .content > .innovative-ideas::after{
+
+    .service > .content > .innovative-ideas::after {
         left: 70px;
     }
+
     .service > .content > article {
         width: 180px;
     }
+
     .service > .content > article > .sub-title {
         font-size: 18px;
         padding-top: 20px;
         padding-bottom: 40px;
     }
+
     .service > .content > article > .sub-content {
         font-size: 15px;
         color: white;
         width: 180px;
         height: 90px;
     }
+
     .service > .content > article > .read-more > a {
         font-size: 12px;
     }
@@ -3376,18 +3525,22 @@ footer > h3 {
     .education {
         height: 730px;
     }
+
     .education > .content > div {
         width: 300px;
         height: 230px;
     }
+
     .education > .content > div > .sub-title {
         font-size: 14px;
     }
+
     .education > .content > div > .education-type {
         font-size: 20px;
         top: 100px;
         left: 30px;
     }
+
     .education > .content > div > .year {
         font-size: 14px;
         top: 170px;
@@ -3397,6 +3550,7 @@ footer > h3 {
     footer {
         height: 100px;
     }
+
     footer > h3 {
         width: 290px;
     }
@@ -3406,15 +3560,19 @@ footer > h3 {
     .about {
         height: 1000px;
     }
+
     .about > .content {
         height: 410px;
     }
+
     .about > .content > p {
         margin-left: 30px;
     }
+
     .about > .content > :nth-child(4) {
         padding-top: 10px;
     }
+
     .about > .content > .button-container {
         top: 330px;
     }
@@ -3422,6 +3580,7 @@ footer > h3 {
     .portfolio {
         height: 1050px;
     }
+
     .portfolio > .frame {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(2, 1fr);
@@ -3433,17 +3592,20 @@ footer > h3 {
         top: 57%;
         transform: translate(-50%, -50%);
     }
+
     .portfolio > .frame > .photo-1 {
         width: 320px;
         left: 51%;
         transform: translateX(-50%);
     }
+
     .portfolio > .frame > .photo-2 {
         width: 160px;
         height: 160px;
         grid-column: 1/2;
         grid-row: 3/4;
     }
+
     .portfolio > .frame > .photo-3 {
         width: 160px;
         height: 160px;
@@ -3451,12 +3613,14 @@ footer > h3 {
         grid-row: 3/4;
         transform: translateX(3px);
     }
+
     .portfolio > .frame > .photo-4 {
         width: 160px;
         height: 160px;
         grid-column: 1/2;
         grid-row: 4/5;
     }
+
     .portfolio > .frame > .photo-5 {
         width: 160px;
         height: 160px;
@@ -3464,21 +3628,25 @@ footer > h3 {
         grid-row: 4/5;
         transform: translateX(3px);
     }
+
     .portfolio > .frame > .photo-6 {
         width: 340px;
         height: 160px;
         grid-column: 1/5;
         grid-row: 5/6;
     }
+
     .portfolio > .frame > .photo-1:hover {
         left: 51%;
         transform: translate(-50%, 15px);
         transition: all 0.4s ease-out;
     }
+
     .portfolio > .frame > .photo-3:hover {
         transform: translate(3px, 15px);
         transition: all 0.4s ease-out;
     }
+
     .portfolio > .frame > .photo-5:hover {
         transform: translate(3px, 15px);
         transition: all 0.4s ease-out;
@@ -3487,20 +3655,25 @@ footer > h3 {
     .contact {
         height: 1950px;
     }
+
     .contact > .content {
         top: 53%;
     }
+
     .contact > .content > .content-1 {
         height: 280px;
         width: 260px;
     }
+
     .contact > .content > .content-1 > .sub-title {
         width: 260px;
     }
+
     .contact > .content > .content-1 > .sub-content {
         width: 220px;
         height: 200px;
     }
+
     .contact > .content > .content-2 {
         position: relative;
         height: 800px;
@@ -3508,6 +3681,7 @@ footer > h3 {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-2 > div {
         width: 250px;
         height: 250px;
@@ -3519,6 +3693,7 @@ footer > h3 {
     .service {
         height: 1850px;
     }
+
     .service > .content {
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: repeat(1, 1fr);
@@ -3528,27 +3703,35 @@ footer > h3 {
         left: 50%;
         top: 54%;
     }
-    .service > .content > .app-development::after{
+
+    .service > .content > .app-development::after {
         left: 70px;
     }
-    .service > .content > .web-development::after{
+
+    .service > .content > .web-development::after {
         left: 70px;
     }
-    .service > .content > .innovative-ideas::after{
+
+    .service > .content > .innovative-ideas::after {
         left: 70px;
     }
+
     .service > .content > article {
         width: 180px;
     }
+
     .service > .content > .web-design::after, .graphic-design::after {
         display: none;
     }
+
     .service > .content > .app-development::after {
         display: none;
     }
+
     .service > .content > .web-development::after {
         display: none;
     }
+
     .service > .content > .innovative-ideas::after {
         display: none;
     }
@@ -3558,25 +3741,30 @@ footer > h3 {
     .quotes {
         height: 480px;
     }
+
     .quotes > .thinking-image {
         width: 200px;
         bottom: 0;
     }
-    .quotes > .designer{
+
+    .quotes > .designer {
         left: 260px;
         top: 50px;
         width: 110px;
         height: 190px;
     }
+
     .quotes > .coder {
         width: 110px;
         height: 200px;
         left: 260px;
         top: 280px;
     }
+
     .quotes > .coder > .content {
         top: 30px;
     }
+
     @keyframes quotes-designer {
         0% {
             background: white;
@@ -3625,20 +3813,24 @@ footer > h3 {
     .about {
         height: 920px;
     }
+
     .about > .content {
         top: 510px;
     }
+
     .about > .profilephoto {
         width: 270px;
         height: 330px;
         left: 50%;
         transform: translateX(-50%);
     }
+
     .about > .content > .socialmedia {
         width: 150px;
         overflow-x: auto;
         overflow-y: hidden;
     }
+
     .about > .content > .socialmedia > .list {
         animation: social-media-swipe 5s ease alternate infinite;
     }
@@ -3648,24 +3840,29 @@ footer > h3 {
         overflow-x: auto;
         overflow-y: hidden;
     }
+
     .contact > .content > .content-2 > .socialmedia > .list {
         animation: social-media-swipe 5s ease alternate infinite;
     }
+
     .contact > .content > .content-3 {
         left: 50%;
         transform: translateX(-50%);
         width: 280px;
     }
+
     .contact > .content > .content-3 > .title {
         left: 50%;
         width: max-content;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-3 > .content {
         width: 100%;
         left: 50%;
         transform: translateX(-50%);
     }
+
     .contact > .content > .content-3 > .say-hello {
         left: 50%;
         transform: translateX(-50%);
@@ -3685,6 +3882,7 @@ footer > h3 {
     .about > .content {
         height: 420px;
     }
+
     .about > .content > .button-container {
         top: 345px;
     }
@@ -3694,15 +3892,18 @@ footer > h3 {
     .about {
         height: 990px;
     }
+
     .about > .content {
         height: 485px;
     }
+
     .about > .content > .header1 {
         text-align: center;
         width: 120px;
         left: 50%;
         transform: translateX(-50%);
     }
+
     .about > .content > .header2 {
         text-align: center;
         width: 140px;
@@ -3710,13 +3911,16 @@ footer > h3 {
         transform: translateX(-50%);
         top: 100px;
     }
+
     .about > .content > p {
         transform: translateY(70px);
     }
+
     .about > .content > .button-container {
         top: 410px;
         width: 230px;
     }
+
     .about > .content > .button-container > a {
         width: 80px;
     }
@@ -3726,11 +3930,13 @@ footer > h3 {
     .quotes {
         height: 540px;
     }
+
     .quotes > .thinking-image {
         width: 180px;
         bottom: 0;
     }
-    .quotes > .designer{
+
+    .quotes > .designer {
         all: unset;
         position: absolute;
         left: 10%;
@@ -3741,9 +3947,11 @@ footer > h3 {
         font-family: 'Ubuntu', sans-serif;
         animation: quotes-designer 2s infinite alternate;
     }
+
     .quotes > .designer > .author {
         font-size: 12px;
     }
+
     .quotes > .coder {
         all: unset;
         position: absolute;
@@ -3755,9 +3963,11 @@ footer > h3 {
         font-family: 'Ubuntu', sans-serif;
         animation: quotes-coder 2s infinite alternate;
     }
+
     .quotes > .coder > .author {
         font-size: 12px;
     }
+
     @keyframes quotes-designer {
         0% {
             background: white;
@@ -3800,15 +4010,18 @@ footer > h3 {
     .about {
         height: 990px;
     }
+
     .about > .content {
         height: 485px;
     }
+
     .about > .content > .header1 {
         text-align: center;
         width: 120px;
         left: 50%;
         transform: translateX(-50%);
     }
+
     .about > .content > .header2 {
         text-align: center;
         width: 140px;
@@ -3816,10 +4029,12 @@ footer > h3 {
         transform: translateX(-50%);
         top: 100px;
     }
+
     .about > .content > p {
         transform: translateY(70px);
         font-size: 16px;
     }
+
     .about > .content > .button-container {
         top: 410px;
         width: 230px;
@@ -3833,14 +4048,17 @@ footer > h3 {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .quotes {
         height: 760px;
     }
+
     .quotes > .thinking-image {
         width: 180px;
         bottom: 0;
     }
-    .quotes > .designer{
+
+    .quotes > .designer {
         all: unset;
         position: absolute;
         left: 50%;
@@ -3852,9 +4070,11 @@ footer > h3 {
         font-family: 'Ubuntu', sans-serif;
         animation: quotes-designer 2s infinite alternate;
     }
+
     .quotes > .designer > .author {
         font-size: 12px;
     }
+
     .quotes > .coder {
         all: unset;
         position: absolute;
@@ -3867,9 +4087,11 @@ footer > h3 {
         font-family: 'Ubuntu', sans-serif;
         animation: quotes-coder 2s infinite alternate;
     }
+
     .quotes > .coder > .author {
         font-size: 12px;
     }
+
     @keyframes quotes-designer {
         0% {
             background: white;
@@ -3912,9 +4134,11 @@ footer > h3 {
     .about {
         height: 990px;
     }
+
     .about > .content {
         height: 485px;
     }
+
     .about > .content > .header1 {
         text-align: center;
         font-size: 24px;
@@ -3922,6 +4146,7 @@ footer > h3 {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .about > .content > .header2 {
         text-align: center;
         font-size: 17px;
@@ -3930,14 +4155,17 @@ footer > h3 {
         transform: translateX(-50%);
         top: 100px;
     }
+
     .about > .content > p {
         transform: translateY(70px);
         font-size: 15px;
     }
+
     .about > .content > .button-container {
         top: 410px;
         width: 230px;
     }
+
     .about > .content > .button-container > button {
         width: 80px;
         font-size: 10px;
@@ -3951,10 +4179,12 @@ footer > h3 {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .about > .profilephoto > .image {
         width: 100%;
         height: 100%;
     }
+
     .about > .profilephoto > .frame {
         display: none;
     }

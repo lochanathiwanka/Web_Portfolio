@@ -56,5 +56,4 @@ function matches() {
 window.onresize = function(event) {
     matches();
 };
-
 matches();
