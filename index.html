@@ -37,10 +37,27 @@
             <li><a href="#projects"><i class="fas fa-laptop-code"></i></a></li>
             <li><a href="#contact"><i class="fas fa-phone-alt"></i></a></li>
         </ul>
-        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+        <div class="menu-btn" id="btnMenu"><i class="fas fa-bars"></i></div>
+        <section class="slide-menu-container">
+            <div class="slide-menu" id="slide-menu">
+                <ul class="menu-icon" id="menu-icon">
+                    <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+                    <li><a href="#service"><i class="fas fa-lightbulb"></i>Service</a></li>
+                    <li><a href="#skills"><i class="fab fa-gripfire"></i>Skills</a></li>
+                    <li><a href="#portfolio"><i class="fas fa-camera"></i>Portfolio</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i>Education</a></li>
+                    <li><a href="#projects"><i class="fas fa-laptop-code"></i>Projects</a></li>
+                    <li><a href="#contact"><i class="fas fa-phone-alt"></i>Contact</a></li>
+                </ul>
+            </div>
+        </section>
     </section>
 </header>
 <main>
+    <!--<section class="slide-menu-container">
+        <div id="slide-menu" class="slide-menu"></div>
+    </section>-->
     <section class="home" id="home">
         <section class="blend"></section>
         <div class="text">i'm <span class="typing">Lochana Thiwanka</span></div>
@@ -109,7 +126,7 @@
             </nav>
         </article>
     </section>
-    <section class="quotes">
+    <section class="quotes" id="quotes">
         <article class="designer">
             <h2 class="title">designer</h2>
             <p class="content">
@@ -427,9 +444,12 @@
             <section class="content-3">
                 <h2 class="title">DROP ME A LINE</h2>
                 <form class="content">
+                    <label for="name"></label>
                     <input type="text" id="name" class="name" placeholder="Name">
-                    <input type="text" class="mail-address" placeholder="Email">
-                    <textarea class="message" placeholder="Message"></textarea>
+                    <label for="mail-address"></label>
+                    <input class="mail-address" id="mail-address" placeholder="Email" type="text">
+                    <label for="message"></label>
+                    <textarea class="message" id="message" placeholder="Message"></textarea>
                 </form>
                 <button class="say-hello">SAY-HELLO!</button>
             </section>

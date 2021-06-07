@@ -7,8 +7,14 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 main {
     overflow-x: hidden;
+    transition: all 0.6s ease;
 }
 
 .headerBar {
@@ -28,6 +34,7 @@ main {
 
 .headerBar > .logo {
     position: absolute;
+    z-index: 1;
     font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
     color: white;
@@ -119,6 +126,7 @@ main {
 
 .headerBar > .menu-btn {
     position: absolute;
+    z-index: 1;
     display: none;
     cursor: pointer;
     color: white;
@@ -129,6 +137,70 @@ main {
 }
 
 /*------------------------------------------------------------*/
+
+/*Slide Menu Styling*/
+.slide-menu-container {
+    position: relative;
+    height: calc(100vh - 40px);
+    width: 100vw;
+}
+
+.slide-menu-container > .slide-menu {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    right: -340px;
+    top: 40px;
+    transition: all 0.3s ease;
+    background-color: #373d41;
+}
+
+.headerBar.sticky .slide-menu-container > .slide-menu {
+    background-color: #b8b8b5;
+}
+
+.headerBar > .slide-menu-container > .slide-menu > .menu-icon {
+    position: absolute;
+    height: 80%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    font-size: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.headerBar > .slide-menu-container > .slide-menu > .menu-icon > li {
+    padding-right: 60px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.headerBar > .slide-menu-container > .slide-menu > .menu-icon > li > a {
+    padding-left: 30px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.headerBar.sticky > .slide-menu-container > .slide-menu > .menu-icon > li > a {
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.headerBar > .slide-menu-container > .slide-menu > .menu-icon > li > a:hover {
+    color: #FFA500;
+    transition: color 0.3s ease;
+}
+
+.headerBar.sticky > .slide-menu-container > .slide-menu > .menu-icon > li > a:hover {
+    color: #F2F0FC;
+    transition: all 0.3s ease;
+}
+
+/*--------------------------------------------------*/
+
 
 /*Home styling*/
 .home {
@@ -3296,7 +3368,7 @@ footer > h3 {
 
     .headerBar > .menu-btn {
         display: flex;
-        right: 15px;
+        right: 30px;
         top: 50%;
         transform: translateY(-50%);
         font-size: 24px;
