@@ -143,6 +143,7 @@ main {
     position: relative;
     height: calc(100vh - 40px);
     width: 100vw;
+    display: none;
 }
 
 .slide-menu-container > .slide-menu {
@@ -156,11 +157,11 @@ main {
     background-color: #373d41;
 }
 
-.headerBar.sticky .slide-menu-container > .slide-menu {
+.slide-menu-container > .slide-menu {
     background-color: #b8b8b5;
 }
 
-.headerBar > .slide-menu-container > .slide-menu > .menu-icon {
+.slide-menu-container > .slide-menu > .menu-icon {
     position: absolute;
     height: 80%;
     list-style: none;
@@ -173,28 +174,28 @@ main {
     margin: auto;
 }
 
-.headerBar > .slide-menu-container > .slide-menu > .menu-icon > li {
+.slide-menu-container > .slide-menu > .menu-icon > li {
     padding-right: 60px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.headerBar > .slide-menu-container > .slide-menu > .menu-icon > li > a {
+.slide-menu-container > .slide-menu > .menu-icon > li > a {
     padding-left: 30px;
     color: white;
     transition: color 0.3s ease;
 }
 
-.headerBar.sticky > .slide-menu-container > .slide-menu > .menu-icon > li > a {
+.slide-menu-container > .slide-menu > .menu-icon > li > a {
     color: black;
     transition: all 0.3s ease;
 }
 
-.headerBar > .slide-menu-container > .slide-menu > .menu-icon > li > a:hover {
+.slide-menu-container > .slide-menu > .menu-icon > li > a:hover {
     color: #FFA500;
     transition: color 0.3s ease;
 }
 
-.headerBar.sticky > .slide-menu-container > .slide-menu > .menu-icon > li > a:hover {
+.slide-menu-container > .slide-menu > .menu-icon > li > a:hover {
     color: #F2F0FC;
     transition: all 0.3s ease;
 }
