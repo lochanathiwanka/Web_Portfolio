@@ -14,7 +14,7 @@ html {
 
 main {
     overflow-x: hidden;
-    transition: all 0.6s ease;
+    /*transition: all 0.6s ease;*/
 }
 
 .headerBar {
@@ -157,7 +157,7 @@ main {
     background-color: #373d41;
 }
 
-.slide-menu-container > .slide-menu {
+.headerBar.sticky > .slide-menu-container > .slide-menu {
     background-color: #b8b8b5;
 }
 
@@ -169,25 +169,37 @@ main {
     flex-direction: column;
     row-gap: 25px;
     font-size: 20px;
-    top: 0;
+    /*top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    margin: auto;
+    margin: auto;*/
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .slide-menu-container > .slide-menu > .menu-icon > li {
-    padding-right: 60px;
+    /*padding-right: 60px;*/
+    left: 0;
+    right: 0;
+    margin: auto;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .slide-menu-container > .slide-menu > .menu-icon > li > a {
-    padding-left: 30px;
+    /*padding-left: 30px;*/
     color: white;
     transition: color 0.3s ease;
 }
 
-.slide-menu-container > .slide-menu > .menu-icon > li > a {
+.headerBar.sticky > .slide-menu-container > .slide-menu > .menu-icon > li > a {
     color: black;
     transition: all 0.3s ease;
+}
+
+.headerBar.sticky > .slide-menu-container > .slide-menu > .menu-icon > li > a > i {
+
 }
 
 .slide-menu-container > .slide-menu > .menu-icon > li > a:hover {
@@ -195,7 +207,7 @@ main {
     transition: color 0.3s ease;
 }
 
-.slide-menu-container > .slide-menu > .menu-icon > li > a:hover {
+.headerBar.sticky > .slide-menu-container > .slide-menu > .menu-icon > li > a:hover {
     color: #F2F0FC;
     transition: all 0.3s ease;
 }
@@ -364,7 +376,7 @@ main {
 .about > .content > .button-container > a > .btnHireMe {
     background: #1C2520;
     color: #FFA500;
-    box-shadow: 1px 3px 6px 2px #899096;
+    /*box-shadow: 1px 3px 6px 2px #899096;*/
     transition: all 0.6s ease;
 }
 
@@ -373,8 +385,8 @@ main {
     background: #444965;
     color: #E4E5E8;
     font-weight: 700;
-    box-shadow: 1px 3px 6px 2px #848484;
-    transform: translate(0, -10px);
+    /*box-shadow: 1px 3px 6px 2px #848484;*/
+    /*transform: translate(0, -10px);*/
 }
 
 .about > .content > .button-container > a > .btnHireMe:focus {
@@ -385,7 +397,7 @@ main {
     background: #FFA500;
     color: white;
     border: 0;
-    box-shadow: 1px 3px 6px 2px #899096;
+    /*box-shadow: 1px 3px 6px 2px #899096;*/
     transition: all 0.6s ease;
 }
 
@@ -394,8 +406,8 @@ main {
     background: #477158;
     color: black;
     font-weight: 700;
-    box-shadow: 1px 3px 6px 2px #6f6f6f;
-    transform: translate(0, -10px);
+    /*box-shadow: 1px 3px 6px 2px #6f6f6f;*/
+    /*transform: translate(0, -10px);*/
 }
 
 .about > .content > .button-container > a > .btnCV:focus {
@@ -1248,7 +1260,7 @@ main {
     background: #FFA500;
     border: 0;
     border-radius: 20px;
-    box-shadow: 1px 3px 6px 2px #899096;
+    /*box-shadow: 1px 3px 6px 2px #899096;*/
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
     font-weight: 700;
@@ -1261,8 +1273,9 @@ main {
     background: #1C2520;
     color: #E4E5E8;
     font-weight: 700;
-    box-shadow: 1px 3px 6px 2px #242b2b;
-    transform: translate(0, -10px);
+    /*box-shadow: 1px 3px 6px 2px #242b2b;*/
+    /*transform: translate(0, -10px);*/
+    /*transform: scale(1.1);*/
 }
 
 .skills > a > .btn-more:focus {
@@ -1561,7 +1574,7 @@ main {
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    box-shadow: 1px 3px 6px 2px #899096;
+    /*box-shadow: 1px 3px 6px 2px #899096;*/
     transition: all 0.6s ease;
 }
 
@@ -1569,8 +1582,8 @@ main {
     transition: all 0.6s ease;
     background: #1C2520;
     color: #E4E5E8;
-    box-shadow: 1px 3px 6px 2px #242b2b;
-    transform: translate(0, -10px);
+    /*box-shadow: 1px 3px 6px 2px #242b2b;*/
+    /*transform: translate(0, -10px);*/
 }
 
 .education > .content > div > a > .btn-more:focus {
@@ -1662,14 +1675,14 @@ main {
     width: 200px;
     height: 230px;
     cursor: pointer;
-    transition: all 0.6s ease;
+    transition: width, height 0.4s ease-out;
 }
 
 .projects > section > .content > a:hover {
     width: 400px;
     height: 240px;
     transform: translateY(15px);
-    transition: all 0.6s ease;
+    transition: width, height 0.4s ease-in;
 }
 
 .projects > section > .content > a::before {
@@ -1681,7 +1694,7 @@ main {
     opacity: 0;
     right: 0;
     top: 0;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-out;
 }
 
 .projects > section > .content > a::after {
@@ -1691,7 +1704,7 @@ main {
     height: 100%;
     background: #656060;
     opacity: 0.2;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-in;
 }
 
 .projects > section > .content > a:hover::before {
@@ -1700,7 +1713,7 @@ main {
     height: 100%;
     right: 0;
     opacity: 0.8;
-    transition: all 0.3s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 .projects > section > .content > a > article {
@@ -1744,7 +1757,7 @@ main {
     position: absolute;
     top: -40px;
     font-size: 16px;
-    transition: all 0.6s ease;
+    transition: all 0.2s ease-out;
     color: white;
 }
 
@@ -1754,7 +1767,7 @@ main {
     left: 30px;
     width: max-content;
     transform: translateY(-50%);
-    transition: all 0.6s ease;
+    transition: all 0.2s ease-in;
 }
 
 .projects > section > .content > a > article > .description {
@@ -1764,14 +1777,14 @@ main {
     bottom: -20px;
     right: 3px;
     opacity: 0;
-    transition: all 0.6s ease;
+    transition: all 0.2s ease-out;
     color: white;
 }
 
 .projects > section > .content > a:hover > article > .description {
     bottom: 20px;
     opacity: 1;
-    transition: all 0.8s ease;
+    transition: all 0.3s ease-in;
 }
 
 .projects > a {
@@ -1789,11 +1802,12 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #FFA500;
+    /*background: #FFA500;*/
+    border: 2px solid #FFA500;
     border-radius: 20px;
-    border: none;
+    /*border: none;*/
     cursor: pointer;
-    box-shadow: 1px 3px 6px 2px #181819;
+    /*box-shadow: 1px 3px 6px 2px #181819;*/
     transition: all 0.6s ease;
 }
 
@@ -1801,8 +1815,9 @@ main {
     transition: all 0.6s ease;
     color: white;
     background: #1C2520;
-    box-shadow: 1px 3px 6px 2px #181819;
-    transform: translate(0, -10px);
+    /*box-shadow: 1px 3px 6px 2px #181819;*/
+    border: none;
+    /*transform: translate(0, -10px);*/
 }
 
 .projects > a > .more:focus {
@@ -2110,7 +2125,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    box-shadow: 0 0 10px #8a8a8e;
+    /*box-shadow: 0 0 10px #8a8a8e;*/
     font-size: 16px;
     transition: all 0.3s ease;
 }
@@ -2124,7 +2139,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    box-shadow: 0 0 10px #8a8a8e;
+    /*box-shadow: 0 0 10px #8a8a8e;*/
     resize: none;
     font-size: 16px;
     transition: all 0.3s ease;
@@ -2132,7 +2147,7 @@ main {
 
 .contact > .content > .content-3 > .content > .name:focus, .mail-address:focus, .message:focus {
     outline: none !important;
-    box-shadow: 0 0 10px #8a8a8e;
+    /*box-shadow: 0 0 10px #8a8a8e;*/
     font-size: 18px;
     transition: all 0.3s ease;
 }
@@ -2146,7 +2161,7 @@ main {
     border-radius: 30px;
     border: 3px solid #FFA500;
     transition: all 0.6s ease;
-    box-shadow: 0 0 10px #8a8a8e;
+    /*box-shadow: 0 0 10px #8a8a8e;*/
     cursor: pointer;
     font-weight: 700;
 }

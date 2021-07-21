@@ -99,3 +99,18 @@ $('#slide-menu > #menu-icon > li').click(function () {
     });
     body.css("overflow", "auto");
 });
+
+
+$(function () {
+    $('main').click(function () {
+        /*let slide_menu_container = $('#slide-menu-container');
+        let slide_menu = $('#slide-menu');
+        slide_menu_container.css("display", "none");
+        slide_menu.animate({
+            right: "-340px"
+        }, 100, 'linear', function () {
+            slide_menu.css("display", "none");
+        });
+        body.css("overflow", "auto");*/
+    });
+});
